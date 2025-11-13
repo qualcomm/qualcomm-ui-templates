@@ -31,6 +31,12 @@
     "@angular/platform-server": "^20.3.0",
     "@angular/router": "^20.3.0",
     "@angular/ssr": "^20.3.10",
+    "@qualcomm-ui/angular": "^1.0.0",
+    "@qualcomm-ui/angular-core": "^1.0.0",
+    "@qualcomm-ui/core": "^1.0.0",
+    "@qualcomm-ui/dom": "^1.0.0",
+    "@qualcomm-ui/qds-core": "^1.0.0",
+    "@qualcomm-ui/utils": "^1.0.0",
     "express": "^5.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
