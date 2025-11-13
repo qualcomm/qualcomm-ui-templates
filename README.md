@@ -1,2 +1,2 @@
 # qualcomm-ui-templates
-Qualcomm Ui Templates 
+Qualcomm UI Templates 
