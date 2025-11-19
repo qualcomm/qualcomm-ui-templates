@@ -8,7 +8,6 @@ import {
   type ReactNode,
 } from "react"
 import {ThemeProvider} from "next-themes"
-import {QuiRoot} from "@qualcomm-ui/react/qui-root"
 
 const sansFont = Roboto_Flex({
   variable: "--font-roboto-flex",
