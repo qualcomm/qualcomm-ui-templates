@@ -1,14 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Roboto_Flex,
+  Roboto_Mono,
+} from "next/font/google"
 import "./globals.css";
+import {
+  type ReactNode,
+} from "react"
+import {ThemeProvider} from "next-themes"
+import {QuiRoot} from "@qualcomm-ui/react/qui-root"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const sansFont = Roboto_Flex({
+  variable: "--font-roboto-flex",
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const monoFont = Roboto_Mono({
+  variable: "--font-roboto-mono",
   subsets: ["latin"],
 });
 
@@ -20,14 +29,22 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning data-brand="qualcomm">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${sansFont.variable} ${monoFont.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          value={{dark: "dark", light: "light", system: "test"}}
+          themes={["dark", "light"]}
+          attribute="data-theme"
+          defaultTheme="light"
+          enableSystem={false}
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
