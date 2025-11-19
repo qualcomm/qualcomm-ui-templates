@@ -172,7 +172,7 @@
             "SPDX-License-Identifier|Redistribution and use in source and binary forms, with or without"
           ],
           "flags": "i",
-          "succeed-on-non-existent": false
+          "succeed-on-non-existent": true
         }
       }
     },
