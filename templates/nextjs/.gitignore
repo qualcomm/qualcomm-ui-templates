@@ -1,6 +1,47 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+###############################################################################
+# Dependency directories
+###############################################################################
+**/node_modules/
 
-# dependencies
+###############################################################################
+# Build / cache artifacts
+###############################################################################
+dist/
+build/
+out/
+out-tsc/
+temp/
+tmp/
+.build/
+.turbo/
+**/.turbo/**
+.turbo-cache/*
+.nx/cache/
+.nx/workspace-data/
+**/stats.yml
+**/meta.json
+**/build-metafile.json
+
+###############################################################################
+# Frameworks
+###############################################################################
+.next
+.vercel
+next-env.d.ts
+
+###############################################################################
+# Environment / secrets
+###############################################################################
+.env*
+
+###############################################################################
+# Logs, dependencies
+###############################################################################
+*.log*
+yarn-error.log
+.pnpm-debug.log
+.pnpm-debug.log_
+.eslintcache
 /node_modules
 /.pnp
 .pnp.*
@@ -10,32 +51,35 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
-/coverage
+###############################################################################
+# TypeScript incremental build info
+###############################################################################
+tsconfig.tsbuildinfo
+tsconfig.*.tsbuildinfo
 
-# next.js
-/.next/
-/out/
+###############################################################################
+# Test artifacts & screenshots
+###############################################################################
+__screenshots__/
+**/coverage
+.nyc_output/
+vitest.config.*.timestamp*
 
-# production
-/build
-
-# misc
+###############################################################################
+# OS / editor / IDE files
+###############################################################################
 .DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+.fleet/
+.idea/
+.webstorm/backup
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+.project
+.classpath
+.c9/
+*.launch
+.settings/
