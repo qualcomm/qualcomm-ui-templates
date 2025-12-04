@@ -5,6 +5,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useRouteLoaderData,
 } from "react-router"
 import {
   type LoaderFunctionArgs,
@@ -15,6 +16,7 @@ import {
   PreventFlashOnWrongTheme,
   Theme,
   ThemeProvider,
+  useTheme,
 } from "@qualcomm-ui/react-router-utils/client"
 
 import type {Route} from "./+types/root"
@@ -28,13 +30,17 @@ export const links: Route.LinksFunction = () => [
     crossOrigin: "anonymous",
   },
   {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,400..600&display=swap",
+    rel: "stylesheet"
   },
+  {
+    href: "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400..500&display=swap",
+    rel: "stylesheet"
+  }
 ]
 
-
 import {qdsThemeCookie} from "./sessions.server"
+import type {ReactNode} from "react"
 
 interface RootLoaderData {
   qdsTheme: Theme
@@ -52,31 +58,32 @@ export async function loader({
   }
 }
 
-export default function App() {
-  const {qdsTheme} = useLoaderData<RootLoaderData>()
+export function Layout({children}: { children: ReactNode}) {
+  const data = useRouteLoaderData<RootLoaderData>("root")
 
   return (
-    <ThemeProvider theme={qdsTheme} themeAction="/action/set-theme">
+    <ThemeProvider theme={data?.qdsTheme} themeAction="/action/set-theme">
+      {children}
+    </ThemeProvider>
+  )
+}
+
+export default function App() {
+  const {qdsTheme: ssrTheme} = useLoaderData<RootLoaderData>()
+  const [theme] = useTheme()
+
+  return (
+    <ThemeProvider theme={theme} themeAction="/action/set-theme">
       <html
         data-brand="qualcomm"
-        data-theme={qdsTheme}
+        data-theme={theme}
         lang="en"
-        style={{colorScheme: qdsTheme || "dark"}}
+        style={{colorScheme: theme || "dark"}}
       >
         <head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link href="https://fonts.googleapis.com" rel="preconnect" />
-          <link href="https://fonts.gstatic.com" rel="preconnect" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,400..600&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400..500&display=swap"
-            rel="stylesheet"
-          />
-          <PreventFlashOnWrongTheme ssrTheme={Boolean(qdsTheme)} />
+          <PreventFlashOnWrongTheme ssrTheme={Boolean(ssrTheme)} />
           <Meta />
           <Links />
         </head>
