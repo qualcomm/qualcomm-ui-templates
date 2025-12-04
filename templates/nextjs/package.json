@@ -9,19 +9,19 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@qualcomm-ui/core": "^1.0.7",
-    "@qualcomm-ui/dom": "^1.0.5",
-    "@qualcomm-ui/qds-core": "^1.4.0",
-    "@qualcomm-ui/react": "^1.1.4",
-    "@qualcomm-ui/react-core": "^1.0.7",
-    "@qualcomm-ui/tailwind-plugin": "^1.1.0",
-    "@qualcomm-ui/utils": "^1.0.3",
+    "@qualcomm-ui/core": "^1.0.10",
+    "@qualcomm-ui/dom": "^1.0.6",
+    "@qualcomm-ui/qds-core": "^1.9.1",
+    "@qualcomm-ui/react": "^1.4.2",
+    "@qualcomm-ui/react-core": "^1.0.10",
+    "@qualcomm-ui/tailwind-plugin": "^1.2.0",
+    "@qualcomm-ui/utils": "^1.0.4",
     "@tanstack/react-virtual": "^3.13.12",
     "lucide-react": "^0.554.0",
     "next": "16.0.3",
     "next-themes": "^0.4.6",
-    "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react": "19.2.1",
+    "react-dom": "19.2.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
