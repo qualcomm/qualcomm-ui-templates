@@ -15,6 +15,7 @@
     "@qualcomm-ui/react": "^1.4.2",
     "@qualcomm-ui/react-core": "^1.0.10",
     "@qualcomm-ui/react-router-utils": "^1.0.6",
+    "@qualcomm-ui/tailwind-plugin": "^1.2.0",
     "@qualcomm-ui/utils": "^1.0.4",
     "@react-router/node": "^7.10.0",
     "@react-router/serve": "^7.10.0",
