@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "update-all-dependencies": "ncu -c 2 --deep -u",
-    "update-qui": "ncu -c 2 --deep -u --filter '@qualcomm-ui/*'"
+    "update-qui": "ncu --deep -u --filter '@qualcomm-ui/*'"
   },
   "devDependencies": {
     "npm-check-updates": "^19.1.2",
