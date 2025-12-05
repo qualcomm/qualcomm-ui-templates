@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* You can add global styles to this file, and also import other style files */
 @import "@qualcomm-ui/qds-core/styles/components.css";
 @import "@qualcomm-ui/qds-core/themes/qualcomm-dark.css";
@@ -10,4 +12,15 @@ html {
 body {
   height: 100%;
   background-color: var(--color-background-neutral-01);
+  color: var(--color-text-neutral-primary);
+  font-family: var(--type-font-family-primary), "Roboto Flex", sans-serif;
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 16px;
+}
+

@@ -83,3 +83,10 @@ vitest.config.*.timestamp*
 .c9/
 *.launch
 .settings/
+
+###############################################################################
+# MISC
+###############################################################################
+
+# Ignore package-specific lockfiles. The user installs using their own package manager.
+templates/*/pnpm-lock.yaml

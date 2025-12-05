@@ -17,24 +17,24 @@
     "@qualcomm-ui/react-router-utils": "^1.0.6",
     "@qualcomm-ui/tailwind-plugin": "^1.2.0",
     "@qualcomm-ui/utils": "^1.0.4",
-    "@react-router/node": "^7.10.0",
-    "@react-router/serve": "^7.10.0",
-    "@tanstack/react-virtual": "^3.13.12",
-    "isbot": "^5.1.31",
-    "lucide-react": "^0.554.0",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
-    "react-router": "^7.10.0"
+    "@react-router/node": "~7.10.0",
+    "@react-router/serve": "~7.10.0",
+    "@tanstack/react-virtual": "~3.13.12",
+    "isbot": "~5.1.32",
+    "lucide-react": "~0.554.0",
+    "react": "~19.2.1",
+    "react-dom": "~19.2.1",
+    "react-router": "~7.10.0"
   },
   "devDependencies": {
-    "@react-router/dev": "^7.10.0",
-    "@tailwindcss/vite": "^4.1.13",
-    "@types/node": "^22",
-    "@types/react": "^19.2.6",
-    "@types/react-dom": "^19.2.3",
-    "tailwindcss": "^4.1.13",
-    "typescript": "^5.9.3",
-    "vite": "^7.1.7",
-    "vite-tsconfig-paths": "^5.1.4"
+    "@react-router/dev": "~7.10.0",
+    "@tailwindcss/vite": "~4.1.17",
+    "@types/node": "^24",
+    "@types/react": "~19.2.7",
+    "@types/react-dom": "~19.2.3",
+    "tailwindcss": "~4.1.17",
+    "typescript": "~5.9.3",
+    "vite": "~7.2.6",
+    "vite-tsconfig-paths": "~5.1.4"
   }
 }

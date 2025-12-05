@@ -1,6 +1,7 @@
 import {
   Link,
   Outlet,
+  useLocation,
 } from "react-router"
 import {HeaderBar} from "@qualcomm-ui/react/header-bar"
 import {Icon} from "@qualcomm-ui/react/icon"
@@ -13,7 +14,6 @@ import {
 } from "lucide-react"
 import {Avatar} from "@qualcomm-ui/react/avatar"
 import type {ReactNode} from "react"
-import {IconButton} from "@qualcomm-ui/react/button"
 import {
   Theme,
   useTheme,
@@ -28,17 +28,17 @@ function ThemeToggle(): ReactNode {
   }
 
   return (
-    <IconButton
+    <HeaderBar.ActionIconButton
       aria-label="Toggle Theme"
       icon={theme === Theme.LIGHT ? SunIcon : MoonIcon}
       onClick={handleThemeSwitch}
-      size="sm"
-      variant="ghost"
     />
   )
 }
 
 export default function Layout() {
+  const pathname = useLocation().pathname
+
   return (
     <div className="flex h-screen flex-col">
       <HeaderBar.Root className="@container shrink-0">
@@ -52,14 +52,13 @@ export default function Layout() {
         <HeaderBar.Divider />
 
         <HeaderBar.Nav className="hidden @min-[580px]:flex">
-          <HeaderBar.NavItem startIcon={LayoutDashboard} render={<Link to="/dashboard" />}>
-            Dashboard
+          <HeaderBar.NavItem active={pathname === '/'} render={<Link to="/" />}>
+            Introduction
           </HeaderBar.NavItem>
         </HeaderBar.Nav>
 
         <HeaderBar.ActionBar className="hidden @min-[285px]:flex">
           <ThemeToggle />
-          <HeaderBar.ActionIconButton aria-label="Notifications" icon={Bell} />
 
           <HeaderBar.Divider className="hidden @min-[375px]:block" />
 

@@ -4,11 +4,13 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "update-qui": "npx npm-check-updates --deep -u --filter '@qualcomm-ui/*'"
+    "update-all-dependencies": "ncu -c 2 --deep -u",
+    "update-qui": "ncu -c 2 --deep -u --filter '@qualcomm-ui/*'"
   },
   "devDependencies": {
+    "npm-check-updates": "^19.1.2",
     "syncpack": "^14.0.0-alpha.18",
-    "typescript": "5.8.3"
+    "typescript": "~5.9.3"
   },
-  "packageManager": "pnpm@10.22.0+sha512.bf049efe995b28f527fd2b41ae0474ce29186f7edcb3bf545087bd61fbbebb2bf75362d1307fda09c2d288e1e499787ac12d4fcb617a974718a6051f2eee741c"
+  "packageManager": "pnpm@10.24.0+sha512.01ff8ae71b4419903b65c60fb2dc9d34cf8bb6e06d03bde112ef38f7a34d6904c424ba66bea5cdcf12890230bf39f9580473140ed9c946fef328b6e5238a345a"
 }

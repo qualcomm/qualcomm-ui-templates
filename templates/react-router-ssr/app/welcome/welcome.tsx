@@ -1,4 +1,5 @@
 import type {ReactNode} from "react"
+import {Link} from "@qualcomm-ui/react/link"
 
 export function Welcome(): ReactNode {
   return (
@@ -7,19 +8,17 @@ export function Welcome(): ReactNode {
         Welcome to Your App
       </h1>
 
-      <div className="bg-surface-primary mb-6 rounded-lg p-6 shadow-sm">
+      <div className="bg-surface-primary mb-6 rounded-lg pt-6 shadow-sm">
         <h2 className="font-heading-lg text-neutral-primary mb-4">
           Getting Started
         </h2>
         <p className="text-neutral-secondary font-body-md mb-4">
-          This template demonstrates the use of Qualcomm UI components
-          including the Header Bar and Side Navigation. Explore the
-          navigation to see different sections of your application.
+          This is a preconfigured QUI starter application. Refer to the <Link target="_blank" href="https://react-next.qui.qualcomm.com" size="md">documentation</Link>{" "}
+          for component usage.
         </p>
         <p className="text-neutral-secondary font-body-md">
           Use the theme toggle in the header to switch between light and
-          dark modes. The side navigation can be collapsed using the
-          button in its header.
+          dark modes.
         </p>
       </div>
 
@@ -29,8 +28,7 @@ export function Welcome(): ReactNode {
             Components
           </h3>
           <p className="text-neutral-secondary font-body-sm">
-            This template uses various QUI components like HeaderBar,
-            SideNav, Avatar, IconButton, and more.
+            This template uses various QUI components like the HeaderBar, Avatar, Link, and more.
           </p>
         </div>
 
@@ -40,27 +38,25 @@ export function Welcome(): ReactNode {
           </h3>
           <p className="text-neutral-secondary font-body-sm">
             Full support for light and dark themes with automatic
-            persistence using cookies.
+            persistence using a cookie.
           </p>
         </div>
 
         <div className="bg-surface-primary rounded-lg p-6 shadow-sm">
           <h3 className="font-heading-md text-neutral-primary mb-3">
-            Navigation
+            ESLint
           </h3>
           <p className="text-neutral-secondary font-body-sm">
-            Collapsible side navigation with expandable sections and
-            keyboard accessibility.
+            Preconfigured ESLint configuration for automatic linting and formatting.
           </p>
         </div>
 
         <div className="bg-surface-primary rounded-lg p-6 shadow-sm">
           <h3 className="font-heading-md text-neutral-primary mb-3">
-            Responsive
+            Tailwind
           </h3>
           <p className="text-neutral-secondary font-body-sm">
-            Responsive design using container queries that adapts to
-            different screen sizes.
+            Tailwind support including theme variables from the the QUI <Link href="https://react-next.qui.qualcomm.com/integrations/tailwind">Tailwind Plugin</Link>
           </p>
         </div>
       </div>
