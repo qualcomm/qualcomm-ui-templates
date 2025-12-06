@@ -14,7 +14,7 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
-            "tsConfig": "tsconfig.app.json",
+            "tsConfig": "tsconfig.lib.json",
             "assets": [
               {
                 "glob": "**/*",
@@ -65,6 +65,13 @@
             }
           },
           "defaultConfiguration": "development"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "tsconfig.spec.json",
+            "browsers": ["chromium"]
+          }
         },
         "extract-i18n": {
           "builder": "@angular/build:extract-i18n"

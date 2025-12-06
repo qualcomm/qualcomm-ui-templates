@@ -1,8 +1,26 @@
 # QUI Angular SSR
 
-QUI Angular project template featuring Angular SSR.
+QUI Angular project template featuring:
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.
+- Angular SSR
+- [QUI Angular](https://angular-next.qui.qualcomm.com)
+- Vitest Browser Mode + Playwright
+- ESLint
+- Tailwind CSS
+
+## Install
+
+Install using your preferred package manager:
+
+```shell
+npm i
+```
+
+To run tests locally, you'll also need to install playwright:
+
+```shell
+npx playwright install
+```
 
 ## Development server
 

@@ -4,8 +4,10 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "update-all-dependencies": "ncu -c 2 --deep -u",
-    "update-qui": "ncu --deep -u --filter '@qualcomm-ui/*'"
+    "check-all": "ncu -c 1 --deep",
+    "update-all": "pnpm check-all -u",
+    "check-qui": "ncu --deep --filter '@qualcomm-ui/*'",
+    "update-qui": "pnpm check-qui -u"
   },
   "devDependencies": {
     "npm-check-updates": "^19.1.2",

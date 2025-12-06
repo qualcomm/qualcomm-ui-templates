@@ -1,13 +1,24 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZonelessChangeDetection } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import {
+  type ApplicationConfig,
+  provideBrowserGlobalErrorListeners,
+  provideZonelessChangeDetection,
+} from "@angular/core"
+import {
+  provideClientHydration,
+  withEventReplay,
+} from "@angular/platform-browser"
+import {provideRouter} from "@angular/router"
 
-import { routes } from './app.routes';
-import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import {provideQdsTheme} from "@qualcomm-ui/angular/theme"
+
+import {routes} from "./app.routes"
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
-    provideRouter(routes), provideClientHydration(withEventReplay())
-  ]
-};
+    provideRouter(routes),
+    provideClientHydration(withEventReplay()),
+    provideQdsTheme(),
+  ],
+}

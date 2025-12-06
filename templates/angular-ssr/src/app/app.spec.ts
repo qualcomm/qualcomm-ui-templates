@@ -1,25 +1,16 @@
-import { provideZonelessChangeDetection } from '@angular/core';
-import { TestBed } from '@angular/core/testing';
-import { App } from './app';
+import {describe, expect, it} from "vitest"
+import {page} from "vitest/browser"
 
-describe('App', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [App],
-      providers: [provideZonelessChangeDetection()]
-    }).compileComponents();
-  });
+import {render} from "~test-utils/render"
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(App);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
+import {App} from "./app"
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(App);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular-ssr');
-  });
-});
+describe("App", () => {
+  it("should render app", async () => {
+    await render(App)
+
+    await expect
+      .element(page.getByText("QUI Angular project template"))
+      .toBeVisible()
+  })
+})
