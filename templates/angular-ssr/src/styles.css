@@ -7,13 +7,18 @@
 @import "@qualcomm-ui/qds-core/themes/qualcomm-dark.css";
 @import "@qualcomm-ui/qds-core/themes/qualcomm-light.css";
 
+:root {
+  --type-font-family-secondary: var(--font-roboto-flex);
+  --type-font-family-tertiary: var(--font-roboto-mono);
+}
+
 html {
   height: 100%;
 }
 
 body {
   height: 100%;
-  background-color: var(--color-background-neutral-01);
+  background: var(--color-background-neutral-00);
   color: var(--color-text-neutral-primary);
   font-family: var(--type-font-family-primary), "Roboto Flex", sans-serif;
 }

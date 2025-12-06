@@ -1,3 +1,10 @@
 import type {Routes} from "@angular/router"
 
-export const routes: Routes = []
+import {Welcome} from "./welcome/welcome"
+
+export const routes: Routes = [
+  {
+    component: Welcome,
+    path: "",
+  },
+]

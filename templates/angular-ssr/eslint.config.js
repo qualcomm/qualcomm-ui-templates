@@ -1,4 +1,3 @@
-import js from "@eslint/js"
 import {defineConfig} from "eslint/config"
 import globals from "globals"
 import * as tseslint from "typescript-eslint"
@@ -7,6 +6,7 @@ import quiEslintAngular from "@qualcomm-ui/eslint-config-angular"
 import quiEslintTs from "@qualcomm-ui/eslint-config-typescript"
 
 const tsLanguageOptions = {
+  globals: globals.browser,
   parser: tseslint.parser,
   parserOptions: {
     projectService: true,
@@ -37,14 +37,12 @@ export default defineConfig([
   // JS
   {
     extends: [
-      "js/recommended",
       quiEslintTs.configs.base,
       quiEslintTs.configs.sortKeys,
       quiEslintTs.configs.styleGuide,
     ],
     files: ["**/*.{js,mjs,cjs,ts,mts,cts}"],
     languageOptions: {globals: globals.browser},
-    plugins: {js},
   },
   // TS
   {

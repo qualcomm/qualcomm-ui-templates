@@ -7,10 +7,8 @@ import {App} from "./app"
 
 describe("App", () => {
   it("should render app", async () => {
-    await render(App)
+    await render(App, {withRouting: true})
 
-    await expect
-      .element(page.getByText("QUI Angular project template"))
-      .toBeVisible()
+    await expect.element(page.getByText("Qualcomm App")).toBeVisible()
   })
 })

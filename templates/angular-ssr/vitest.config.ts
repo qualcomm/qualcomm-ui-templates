@@ -18,7 +18,6 @@ export default defineConfig({
       provider: playwright({
         actionTimeout: 3000,
       }),
-      testerHtmlPath: "./test-utils/test-setup.html",
     },
     globals: true,
     include: ["./src/**/*.spec.ts"],

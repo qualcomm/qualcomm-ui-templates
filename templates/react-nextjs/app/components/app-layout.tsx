@@ -1,48 +1,36 @@
-import {
-  Link,
-  Outlet,
-  useLocation,
-} from "react-router"
+"use client"
+
+import type {ReactNode} from "react"
+
+import {Layers2, MoonIcon, SunIcon} from "lucide-react"
+import Link from "next/link"
+import {usePathname} from "next/navigation"
+
+import {Avatar} from "@qualcomm-ui/react/avatar"
 import {HeaderBar} from "@qualcomm-ui/react/header-bar"
 import {Icon} from "@qualcomm-ui/react/icon"
-import {
-  Bell,
-  Layers2,
-  LayoutDashboard,
-  MoonIcon,
-  SunIcon,
-} from "lucide-react"
-import {Avatar} from "@qualcomm-ui/react/avatar"
-import type {ReactNode} from "react"
-import {
-  Theme,
-  useTheme,
-} from "@qualcomm-ui/react-router-utils/client"
+
+import {useTheme} from "./theme-provider"
 
 function ThemeToggle(): ReactNode {
-  const [theme, setTheme] = useTheme()
-  
-  const handleThemeSwitch = () => {
-    const nextTheme = theme === Theme.DARK ? Theme.LIGHT : Theme.DARK
-    setTheme(nextTheme)
-  }
+  const {theme, toggleTheme} = useTheme()
 
   return (
     <HeaderBar.ActionIconButton
       aria-label="Toggle Theme"
-      icon={theme === Theme.LIGHT ? SunIcon : MoonIcon}
-      onClick={handleThemeSwitch}
+      icon={theme === "light" ? SunIcon : MoonIcon}
+      onClick={toggleTheme}
     />
   )
 }
 
-export default function Layout() {
-  const pathname = useLocation().pathname
+export function AppLayout({children}: {children: ReactNode}): ReactNode {
+  const pathname = usePathname()
 
   return (
     <div className="flex h-screen flex-col">
       <HeaderBar.Root className="@container shrink-0">
-        <HeaderBar.Logo render={<Link to="/" />}>
+        <HeaderBar.Logo render={<Link href="/" />}>
           <div className="rounded-sm p-0.5">
             <Icon icon={Layers2} size="lg" />
           </div>
@@ -52,7 +40,10 @@ export default function Layout() {
         <HeaderBar.Divider />
 
         <HeaderBar.Nav className="hidden @min-[580px]:flex">
-          <HeaderBar.NavItem active={pathname === '/'} render={<Link to="/" />}>
+          <HeaderBar.NavItem
+            active={pathname === "/"}
+            render={<Link href="/" />}
+          >
             Introduction
           </HeaderBar.NavItem>
         </HeaderBar.Nav>
@@ -73,8 +64,8 @@ export default function Layout() {
       </HeaderBar.Root>
 
       <div className="flex min-h-0 flex-1">
-        <main className="bg-neutral-00 flex-1 overflow-auto p-8">
-          <Outlet />
+        <main className="bg-background flex-1 overflow-auto p-8">
+          {children}
         </main>
       </div>
     </div>

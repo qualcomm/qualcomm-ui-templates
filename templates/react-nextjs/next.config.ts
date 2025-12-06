@@ -1,11 +1,15 @@
-import type { NextConfig } from "next";
-import { cwd } from "node:process";
+import type {NextConfig} from "next"
+import {cwd} from "node:process"
 
 const nextConfig: NextConfig = {
   /* config options here */
+  experimental: {
+    // resolve font issues from behind VPN
+    turbopackUseSystemTlsCerts: true,
+  },
   turbopack: {
-    root: cwd()
-  }
-};
+    root: cwd(),
+  },
+}
 
-export default nextConfig;
+export default nextConfig
