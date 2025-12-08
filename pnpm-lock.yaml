@@ -8,12 +8,15 @@ importers:
 
   .:
     devDependencies:
+      npm-check-updates:
+        specifier: ^19.1.2
+        version: 19.1.2
       syncpack:
         specifier: ^14.0.0-alpha.18
         version: 14.0.0-alpha.27
       typescript:
-        specifier: 5.8.3
-        version: 5.8.3
+        specifier: ~5.9.3
+        version: 5.9.3
 
 packages:
 
@@ -186,6 +189,11 @@ packages:
   get-tsconfig@4.13.0:
     resolution: {integrity: sha512-1VKTZJCwBrvbd+Wn3AOgQP/2Av+TfTCOlE4AcRJE72W1ksZXbAx8PPBR9RzgTeSPzlPMHrbANMH3LbltH73wxQ==}
 
+  npm-check-updates@19.1.2:
+    resolution: {integrity: sha512-FNeFCVgPOj0fz89hOpGtxP2rnnRHR7hD2E8qNU8SMWfkyDZXA/xpgjsL3UMLSo3F/K13QvJDnbxPngulNDDo/g==}
+    engines: {node: '>=20.0.0', npm: '>=8.12.1'}
+    hasBin: true
+
   resolve-pkg-maps@1.0.0:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
 
@@ -229,8 +237,8 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  typescript@5.8.3:
-    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -350,6 +358,8 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
+  npm-check-updates@19.1.2: {}
+
   resolve-pkg-maps@1.0.0: {}
 
   syncpack-darwin-arm64@14.0.0-alpha.27:
@@ -388,4 +398,4 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  typescript@5.8.3: {}
+  typescript@5.9.3: {}

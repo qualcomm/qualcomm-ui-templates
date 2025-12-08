@@ -1,16 +1,19 @@
+import "./app.css"
+
+import type {ReactNode} from "react"
+
 import {
   isRouteErrorResponse,
   Links,
+  type LoaderFunctionArgs,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLoaderData,
   useRouteLoaderData,
 } from "react-router"
-import {
-  type LoaderFunctionArgs,
-  useLoaderData,
-} from "react-router"
+
 import {
   isTheme,
   PreventFlashOnWrongTheme,
@@ -20,27 +23,24 @@ import {
 } from "@qualcomm-ui/react-router-utils/client"
 
 import type {Route} from "./+types/root"
-import "./app.css"
+import {qdsThemeCookie} from "./sessions.server"
 
 export const links: Route.LinksFunction = () => [
-  {rel: "preconnect", href: "https://fonts.googleapis.com"},
+  {href: "https://fonts.googleapis.com", rel: "preconnect"},
   {
-    rel: "preconnect",
-    href: "https://fonts.gstatic.com",
     crossOrigin: "anonymous",
+    href: "https://fonts.gstatic.com",
+    rel: "preconnect",
   },
   {
     href: "https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,400..600&display=swap",
-    rel: "stylesheet"
+    rel: "stylesheet",
   },
   {
     href: "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400..500&display=swap",
-    rel: "stylesheet"
-  }
+    rel: "stylesheet",
+  },
 ]
-
-import {qdsThemeCookie} from "./sessions.server"
-import type {ReactNode} from "react"
 
 interface RootLoaderData {
   qdsTheme: Theme
@@ -58,7 +58,7 @@ export async function loader({
   }
 }
 
-export function Layout({children}: { children: ReactNode}) {
+export function Layout({children}: {children: ReactNode}) {
   const data = useRouteLoaderData<RootLoaderData>("root")
 
   return (
@@ -82,7 +82,7 @@ export default function App() {
       >
         <head>
           <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta content="width=device-width, initial-scale=1" name="viewport" />
           <PreventFlashOnWrongTheme ssrTheme={Boolean(ssrTheme)} />
           <Meta />
           <Links />
@@ -114,11 +114,11 @@ export function ErrorBoundary({error}: Route.ErrorBoundaryProps) {
   }
 
   return (
-    <main className="pt-16 p-4 container mx-auto">
+    <main className="container mx-auto p-4 pt-16">
       <h1>{message}</h1>
       <p>{details}</p>
       {stack && (
-        <pre className="w-full p-4 overflow-x-auto">
+        <pre className="w-full overflow-x-auto p-4">
           <code>{stack}</code>
         </pre>
       )}
