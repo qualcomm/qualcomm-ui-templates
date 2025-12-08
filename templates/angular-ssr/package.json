@@ -41,6 +41,7 @@
     "@eslint/js": "^9.39.1",
     "@qualcomm-ui/eslint-config-angular": "^1.1.0",
     "@qualcomm-ui/eslint-config-typescript": "^1.1.0",
+    "@qualcomm-ui/tsconfig": "^1.0.4",
     "@tailwindcss/postcss": "^4.1.17",
     "@types/express": "^5.0.6",
     "@types/node": "^24.10.1",
