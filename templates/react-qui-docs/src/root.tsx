@@ -1,6 +1,6 @@
 import "./app.css"
 
-import type {ReactNode} from "react"
+import {type ReactNode, useEffect, useState} from "react"
 
 import {
   isRouteErrorResponse,
@@ -14,6 +14,9 @@ import {
   useRouteLoaderData,
 } from "react-router"
 
+import type {SiteData} from "@qualcomm-ui/mdx-common"
+import {siteData} from "@qualcomm-ui/mdx-vite-plugin"
+import {SiteContextProvider} from "@qualcomm-ui/react-mdx/context"
 import {
   isTheme,
   PreventFlashOnWrongTheme,
@@ -23,6 +26,7 @@ import {
 } from "@qualcomm-ui/react-router-utils/client"
 
 import type {Route} from "./+types/root"
+import {MdxLayout} from "./layout"
 import {qdsThemeCookie} from "./sessions.server"
 
 export const links: Route.LinksFunction = () => [
@@ -61,10 +65,31 @@ export async function loader({
 export function Layout({children}: {children: ReactNode}) {
   const data = useRouteLoaderData<RootLoaderData>("root")
 
+  const [docsSiteData, setDocsSiteData] = useState<SiteData>(
+    siteData ?? {navItems: [], pageMap: {}, searchIndex: []},
+  )
+
+  useEffect(() => {
+    if (import.meta.env.DEV) {
+      console.debug(siteData)
+    }
+    if (import.meta.hot) {
+      import.meta.hot.on("qui-docs-plugin:refresh-site-data", setDocsSiteData)
+      return () => {
+        import.meta.hot?.off(
+          "qui-docs-plugin:refresh-site-data",
+          setDocsSiteData,
+        )
+      }
+    }
+  }, [])
+
   return (
-    <ThemeProvider theme={data?.qdsTheme} themeAction="/action/set-theme">
-      {children}
-    </ThemeProvider>
+    <SiteContextProvider value={docsSiteData}>
+      <ThemeProvider theme={data?.qdsTheme} themeAction="/action/set-theme">
+        {children}
+      </ThemeProvider>
+    </SiteContextProvider>
   )
 }
 
@@ -88,7 +113,9 @@ export default function App() {
           <Links />
         </head>
         <body>
-          <Outlet />
+          <MdxLayout>
+            <Outlet />
+          </MdxLayout>
           <ScrollRestoration />
           <Scripts />
         </body>

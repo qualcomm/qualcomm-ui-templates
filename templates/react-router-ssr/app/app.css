@@ -7,10 +7,11 @@
 @import "@qualcomm-ui/qds-core/themes/qualcomm-dark.css" layer(components);
 
 @theme {
-  --font-sans: var(--font-family-primary);
+  --font-sans: var(--type-font-family-secondary), sans-serif;
 }
 
 html,
 body {
-  font-family: "Roboto Flex", sans-serif;
+  color: var(--color-text-neutral-primary);
+  font-family: var(--type-font-family-secondary), sans-serif;
 }

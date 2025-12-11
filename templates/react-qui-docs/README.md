@@ -13,6 +13,7 @@ A modern, production-ready template for building full-stack React applications u
 - 🔒 TypeScript by default
 - 🎉 TailwindCSS for styling
 - 📖 [React Router docs](https://reactrouter.com/)
+- [QUI docs](https://docs-next.qui.qualcomm.com) for MDX enhancements
 
 ## Getting Started
 
@@ -84,4 +85,7 @@ This template comes with [Tailwind CSS](https://tailwindcss.com/) already config
 
 ---
 
-Built with ❤️ using React Router.
+## HMR Caveats
+
+Due to a [known bug](https://github.com/remix-run/react-router/issues/14082), MDX HMR does not work as intended. Follow these steps to restore it:
+

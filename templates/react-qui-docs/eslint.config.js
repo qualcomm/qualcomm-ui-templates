@@ -1,6 +1,7 @@
 import {defineConfig} from "eslint/config"
 import * as tseslint from "typescript-eslint"
 
+import quiEslintMdx from "@qualcomm-ui/eslint-config-mdx"
 import quiEslintReact from "@qualcomm-ui/eslint-config-react"
 import quiEslintTs from "@qualcomm-ui/eslint-config-typescript"
 import quiEslintPluginReact from "@qualcomm-ui/eslint-plugin-react"
@@ -60,6 +61,11 @@ const eslintConfig = defineConfig([
     // recommendation: scope these to your source files in your package(s).
     files: ["**/*.{ts,tsx}"],
     languageOptions: tsLanguageOptions,
+  },
+  // Markdown
+  {
+    extends: [quiEslintMdx.configs.recommended],
+    files: ["**/*.{md,mdx}", "*.md"],
   },
 ])
 
