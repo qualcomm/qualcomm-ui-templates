@@ -87,5 +87,4 @@ This template comes with [Tailwind CSS](https://tailwindcss.com/) already config
 
 ## HMR Caveats
 
-Due to a [known bug](https://github.com/remix-run/react-router/issues/14082), MDX HMR does not work as intended. Follow these steps to restore it:
-
+Due to a [known bug](https://github.com/remix-run/react-router/issues/14082), MDX HMR triggers a full page reload. We'll provide a workaround for this soon.
