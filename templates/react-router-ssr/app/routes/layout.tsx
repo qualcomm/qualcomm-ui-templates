@@ -44,6 +44,12 @@ export default function Layout() {
           <HeaderBar.NavItem active={pathname === "/"} render={<Link to="/" />}>
             Introduction
           </HeaderBar.NavItem>
+          <HeaderBar.NavItem
+            active={pathname === "/register"}
+            render={<Link to="/register" />}
+          >
+            Register
+          </HeaderBar.NavItem>
         </HeaderBar.Nav>
 
         <HeaderBar.ActionBar className="hidden @min-[285px]:flex">
