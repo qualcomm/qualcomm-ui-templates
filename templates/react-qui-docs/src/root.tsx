@@ -5,6 +5,7 @@ import {type ReactNode, useEffect, useState} from "react"
 import {
   isRouteErrorResponse,
   Links,
+  type LinksFunction,
   type LoaderFunctionArgs,
   Meta,
   Outlet,
@@ -25,11 +26,10 @@ import {
   useTheme,
 } from "@qualcomm-ui/react-router-utils/client"
 
-import type {Route} from "./+types/root"
 import {MdxLayout} from "./layout"
 import {qdsThemeCookie} from "./sessions.server"
 
-export const links: Route.LinksFunction = () => [
+export const links: LinksFunction = () => [
   {href: "https://fonts.googleapis.com", rel: "preconnect"},
   {
     crossOrigin: "anonymous",
@@ -124,7 +124,11 @@ export default function App() {
   )
 }
 
-export function ErrorBoundary({error}: Route.ErrorBoundaryProps) {
+export function ErrorBoundary({
+  error,
+}: {
+  error: {message: string; stack: string; status: number; statusText?: string}
+}) {
   let message = "Oops!"
   let details = "An unexpected error occurred."
   let stack: string | undefined
