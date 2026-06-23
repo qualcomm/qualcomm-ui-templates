@@ -24,8 +24,6 @@ In the repository root folder:
 
 - run `pnpm i` to install dependencies.
 
-If you run into certificate issues during installation, check out our [Troubleshooting](https://react.qui.qualcomm.com/troubleshooting) guide to resolve them.
-
 ## Develop
 
 If it's your first time starting the application (i.e. after a fresh clone), make sure you run:
