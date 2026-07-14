@@ -16,17 +16,17 @@ importers:
         specifier: 9.39.4
         version: 9.39.4
       '@qualcomm-ui/esbuild':
-        specifier: ^1.0.5
-        version: 1.0.5
+        specifier: ^1.0.7
+        version: 1.0.7
       '@qualcomm-ui/eslint-config-typescript':
-        specifier: ^3.0.0
-        version: 3.0.0(e0bad9026aabf403c4d551642f424f8d)
+        specifier: ^3.0.1
+        version: 3.0.1(e0bad9026aabf403c4d551642f424f8d)
       '@qualcomm-ui/oxfmt-config':
         specifier: ^1.0.1
         version: 1.0.1(oxfmt@0.54.0)
       '@qualcomm-ui/tsconfig':
-        specifier: ^2.1.1
-        version: 2.1.1(typescript@5.9.3)
+        specifier: ^2.3.0
+        version: 2.3.0(typescript@5.9.3)
       '@types/node':
         specifier: 24.12.4
         version: 24.12.4
@@ -617,12 +617,12 @@ packages:
     resolution: {integrity: sha512-SEeaJLb3qBNF/OaXnaR1NmmBbFYk1zC0ZH/52fATcRPLFg/p791YrcyFFy44Bo9sLaGuSuLp5Q6axbb/O+v/RA==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  '@qualcomm-ui/esbuild@1.0.5':
-    resolution: {integrity: sha512-7fF+kRl/MEnzEltFKeV0sjQzpfQbLtqhJGvAeOVwerGp+D1bNU/sDYonzDwQpEOG+LAQSGbZ2YVeG9E7G8FqLA==}
+  '@qualcomm-ui/esbuild@1.0.7':
+    resolution: {integrity: sha512-nV5D77QUD7Uk3GIPuvOkE86YEmyqCVDCA86PzEYbdoAPQa+ikuV8vIRBW+h2zvowp0yD7r5P+XJWnYx+K6SGHg==}
     hasBin: true
 
-  '@qualcomm-ui/eslint-config-typescript@3.0.0':
-    resolution: {integrity: sha512-+N3TZvmOliyObYdkmFd7YJ8403hjjV1dX/wgpjPl3GqNYfeVRPeslUBF6BJIrh+NWhs1qkUwBIlOUZtah4C2RQ==}
+  '@qualcomm-ui/eslint-config-typescript@3.0.1':
+    resolution: {integrity: sha512-KCWRNZ/JPgbM+FV5vI42zOlsGzkAiTegV97ES+zJKD8jqcWtwzcdiNzLamZhdOk9wqZ0/WhCg4PzLJrkOwy2HA==}
     peerDependencies:
       '@eslint/js': '>=9.37.0'
       '@stylistic/eslint-plugin': '>=5.2.0'
@@ -636,7 +636,7 @@ packages:
       eslint-plugin-oxfmt: '>=0.9.0'
       eslint-plugin-perfectionist: '>=4.12.3'
       eslint-plugin-promise: '>=7.2.1'
-      eslint-plugin-unicorn: '>=65.0.1'
+      eslint-plugin-unicorn: '>=68.0.0'
       eslint-plugin-unused-imports: '>=4.1.4'
       oxfmt: '>=0.54.0'
       typescript: '>=5.7.3'
@@ -647,8 +647,8 @@ packages:
     peerDependencies:
       oxfmt: '>=0.51.0'
 
-  '@qualcomm-ui/tsconfig@2.1.1':
-    resolution: {integrity: sha512-QxVneTedYIVuH37hHRUYOTYhK6kZM8eP7tNrmDjOX6sYMdIQUxklGQayIM5B5lvLHuQ/27eQ9Te6j+MLm/VaKw==}
+  '@qualcomm-ui/tsconfig@2.3.0':
+    resolution: {integrity: sha512-PcdSWklKpYYzZP43grKl6WxkKEyvB3CeJXEI2e9UbNmQkerzSbCKQvsxzvuiJkChFM7EPhkkmd0vCJdB6j6UAQ==}
     peerDependencies:
       typescript: '>=5.7.3'
 
@@ -2895,9 +2895,9 @@ snapshots:
 
   '@pkgr/core@0.3.6': {}
 
-  '@qualcomm-ui/esbuild@1.0.5': {}
+  '@qualcomm-ui/esbuild@1.0.7': {}
 
-  '@qualcomm-ui/eslint-config-typescript@3.0.0(e0bad9026aabf403c4d551642f424f8d)':
+  '@qualcomm-ui/eslint-config-typescript@3.0.1(e0bad9026aabf403c4d551642f424f8d)':
     dependencies:
       '@eslint/js': 9.39.4
       '@stylistic/eslint-plugin': 5.10.0(eslint@9.39.4(jiti@2.7.0))
@@ -2921,7 +2921,7 @@ snapshots:
     dependencies:
       oxfmt: 0.54.0
 
-  '@qualcomm-ui/tsconfig@2.1.1(typescript@5.9.3)':
+  '@qualcomm-ui/tsconfig@2.3.0(typescript@5.9.3)':
     dependencies:
       typescript: 5.9.3
 

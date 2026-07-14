@@ -22,8 +22,8 @@
     "lint": "eslint --quiet"
   },
   "devDependencies": {
-    "@qualcomm-ui/esbuild": "^1.0.5",
-    "@qualcomm-ui/tsconfig": "^2.1.1",
+    "@qualcomm-ui/esbuild": "^1.0.7",
+    "@qualcomm-ui/tsconfig": "^2.3.0",
     "@types/node": "24.12.4",
     "esbuild": "0.27.7",
     "npm-run-all2": "8.0.4",
