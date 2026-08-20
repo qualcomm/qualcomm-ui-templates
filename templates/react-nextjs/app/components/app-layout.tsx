@@ -56,9 +56,9 @@ export function AppLayout({children}: {children: ReactNode}): ReactNode {
           <Avatar.Root
             className="hidden @min-[375px]:flex"
             size="xs"
-            variant="contrast"
+            emphasis="contrast"
           >
-            <Avatar.Content>JD</Avatar.Content>
+            <Avatar.Content>J</Avatar.Content>
           </Avatar.Root>
         </HeaderBar.ActionBar>
       </HeaderBar.Root>

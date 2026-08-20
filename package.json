@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check-all": "ncu -c 1 --deep --reject typescript",
-    "update-all": "ncu -c 1 --deep -u --reject typescript",
+    "check-all": "ncu -c 1 --deep --reject typescript --reject eslint --reject @eslint/js",
+    "update-all": "ncu -c 1 --deep -u --reject typescript --reject eslint --reject @eslint/js",
     "check-qui": "ncu --deep --filter '@qualcomm-ui/*'",
     "update-qui": "ncu --deep --filter '@qualcomm-ui/*' -u",
     "lint-dependencies": "syncpack lint --source 'templates/*/package.json' --source 'templates/*/packages/*/package.json'",
