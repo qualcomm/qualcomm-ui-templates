@@ -4,6 +4,7 @@ import * as tseslint from "typescript-eslint"
 
 import quiEslintAngular from "@qualcomm-ui/eslint-config-angular"
 import quiEslintTs from "@qualcomm-ui/eslint-config-typescript"
+import quiEslintPluginAngular from "@qualcomm-ui/eslint-plugin-angular"
 
 const tsLanguageOptions = {
   globals: globals.browser,
@@ -60,7 +61,10 @@ export default defineConfig([
     languageOptions: tsLanguageOptions,
   },
   {
-    extends: [quiEslintAngular.configs.templateRecommended],
+    extends: [
+      quiEslintAngular.configs.templateRecommended,
+      quiEslintPluginAngular.config,
+    ],
     files: ["src/**/*.html"],
   },
 ])

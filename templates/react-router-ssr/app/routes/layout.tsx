@@ -59,10 +59,10 @@ export default function Layout() {
 
           <Avatar.Root
             className="hidden @min-[375px]:flex"
+            emphasis="contrast"
             size="xs"
-            variant="contrast"
           >
-            <Avatar.Content>JD</Avatar.Content>
+            <Avatar.Content>J</Avatar.Content>
           </Avatar.Root>
         </HeaderBar.ActionBar>
       </HeaderBar.Root>
