@@ -68,6 +68,7 @@
     "remark-lint-no-heading-punctuation": "4.0.1",
     "remark-lint-unordered-list-marker-style": "4.0.1",
     "tailwindcss": "4.3.3",
+    "tsx": "^4.23.13",
     "typescript": "6.0.3",
     "typescript-eslint": "8.67.0",
     "vite": "8.2.1"
