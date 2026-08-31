@@ -1,5 +1,6 @@
 import {type ReactNode, useEffect, useMemo, useState} from "react"
 
+import {QueryClient, QueryClientProvider} from "@tanstack/react-query"
 import {
   isRouteErrorResponse,
   Links,
@@ -64,6 +65,7 @@ export async function loader({
 }
 
 export function Layout({children}: {children: ReactNode}) {
+  const [queryClient] = useState(new QueryClient())
   const data = useRouteLoaderData<RootLoaderData>("root")
 
   const [docsSiteData, setDocsSiteData] = useState<SiteData>(
@@ -93,11 +95,13 @@ export function Layout({children}: {children: ReactNode}) {
   }, [docsSiteData])
 
   return (
-    <SiteContextProvider value={siteContext}>
-      <ThemeProvider theme={data?.qdsTheme} themeAction="/action/set-theme">
-        {children}
-      </ThemeProvider>
-    </SiteContextProvider>
+    <QueryClientProvider client={queryClient}>
+      <SiteContextProvider value={siteContext}>
+        <ThemeProvider theme={data?.qdsTheme} themeAction="/action/set-theme">
+          {children}
+        </ThemeProvider>
+      </SiteContextProvider>
+    </QueryClientProvider>
   )
 }
 

@@ -1,5 +1,11 @@
-import {type ComponentPropsWithRef, type ReactNode, useState} from "react"
+import {
+  type ReactElement,
+  type ComponentPropsWithRef,
+  type ReactNode,
+  useState,
+} from "react"
 
+import {skipToken, useQuery} from "@tanstack/react-query"
 import {MoonIcon, SunIcon} from "lucide-react"
 import {
   Link as ReactRouterLink,
@@ -7,6 +13,7 @@ import {
   useSearchParams,
 } from "react-router"
 
+import type {SemanticSearchResult} from "@qualcomm-ui/mdx-common"
 import {QdsTheme} from "@qualcomm-ui/qds-core/theme"
 import {
   DocsFooter,
@@ -14,7 +21,10 @@ import {
   type DocsLayoutSettings,
   MobileSidebar,
 } from "@qualcomm-ui/react-mdx/docs-layout"
-import {SiteSearch} from "@qualcomm-ui/react-mdx/site-search"
+import {
+  SemanticSiteSearch,
+  useSemanticSearchReducer,
+} from "@qualcomm-ui/react-mdx/site-search"
 import {useTheme} from "@qualcomm-ui/react-router-utils/client"
 import {HeaderBar} from "@qualcomm-ui/react/header-bar"
 import {Link} from "@qualcomm-ui/react/link"
@@ -121,7 +131,7 @@ export function MdxLayout({children, ...props}: Props): ReactNode {
             </HeaderBar.Nav>
 
             <HeaderBar.ActionBar>
-              <SiteSearch />
+              <GlobalSearch />
               <ThemeToggle />
             </HeaderBar.ActionBar>
           </HeaderBar.Root>
@@ -137,5 +147,41 @@ export function MdxLayout({children, ...props}: Props): ReactNode {
     >
       {children}
     </DocsLayout>
+  )
+}
+
+export function GlobalSearch(): ReactElement {
+  const [searchState, searchDispatch] = useSemanticSearchReducer()
+  const {data, error, isLoading} = useQuery<SemanticSearchResult[]>({
+    placeholderData: (previousData) => previousData,
+    queryFn:
+      searchState.inputValue.trim().length > 2
+        ? async () => {
+            return fetch("/api/search", {
+              body: JSON.stringify({query: searchState.inputValue.trim()}),
+              headers: {"Content-Type": "application/json"},
+              method: "POST",
+            })
+              .then((res) => res.json())
+              .then((resJson) => {
+                return resJson.results
+              })
+          }
+        : skipToken,
+    queryKey: [searchState.inputValue],
+  })
+
+  return (
+    <SemanticSiteSearch
+      error={
+        error && !isLoading && !data?.length
+          ? "Search is unavailable."
+          : undefined
+      }
+      isLoadingResults={isLoading}
+      results={data ?? []}
+      searchActionDispatch={searchDispatch}
+      searchState={searchState}
+    />
   )
 }

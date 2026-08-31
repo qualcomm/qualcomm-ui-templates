@@ -22,6 +22,7 @@ tmp/
 **/meta.json
 **/build-metafile.json
 public/exports
+generated/semantic-search/**
 
 ###############################################################################
 # Frameworks

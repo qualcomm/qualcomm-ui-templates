@@ -39,26 +39,26 @@ importers:
         specifier: ^1.33.0
         version: 1.33.0(@angular/common@22.1.3(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))
       '@qualcomm-ui/angular':
-        specifier: ^3.1.0
-        version: 3.1.0(289069f443d9b0b6509c65b74ee1502d)
+        specifier: ^3.2.0
+        version: 3.2.0(0e6ff7a6f5729345de9b8dc091cb5565)
       '@qualcomm-ui/angular-core':
-        specifier: ^3.1.0
-        version: 3.1.0(d75c6f268a3f7a28652dc92a554beb51)
+        specifier: ^3.2.0
+        version: 3.2.0(8d72557c85b9cf32340f13477bac07ae)
       '@qualcomm-ui/core':
-        specifier: ^1.12.0
-        version: 1.12.0(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.2.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.4.0))(@qualcomm-ui/utils@1.4.0)
+        specifier: ^1.13.0
+        version: 1.13.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
       '@qualcomm-ui/dom':
-        specifier: ^1.2.0
-        version: 1.2.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.4.0)
+        specifier: ^1.3.0
+        version: 1.3.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
       '@qualcomm-ui/qds-core':
-        specifier: ^1.36.0
-        version: 1.36.0(@qualcomm-ui/core@1.12.0(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.2.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.4.0))(@qualcomm-ui/utils@1.4.0))(@qualcomm-ui/utils@1.4.0)
+        specifier: ^1.37.0
+        version: 1.37.0(@qualcomm-ui/core@1.13.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
       '@qualcomm-ui/tailwind-plugin':
         specifier: ^1.10.0
         version: 1.10.0(tailwindcss@4.3.3)
       '@qualcomm-ui/utils':
-        specifier: ^1.4.0
-        version: 1.4.0
+        specifier: ^1.5.0
+        version: 1.5.0(@internationalized/date@3.12.3)
       express:
         specifier: 5.2.1
         version: 5.2.1(supports-color@7.2.0)
@@ -925,6 +925,9 @@ packages:
       '@types/node':
         optional: true
 
+  '@internationalized/date@3.12.3':
+    resolution: {integrity: sha512-fuLX+3ZKLsxI73y8b01EG/WjHb6gE6weCqlfawPO27kBWGMh9G1yH6Csv1uU7/cac9H2GHmOMt6CjmuQ1aia4Q==}
+
   '@internationalized/number@3.6.6':
     resolution: {integrity: sha512-iFgmQaXHE0vytNfpLZWOC2mEJCBRzcUxt53Xf/yCXG93lRvqas237i3r7X4RKMwO3txiyZD4mQjKAByFv6UGSQ==}
 
@@ -1516,8 +1519,8 @@ packages:
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
-  '@qualcomm-ui/angular-core@3.1.0':
-    resolution: {integrity: sha512-DdLceT0OLQV6rMC05eXEQtZqiMhw5MP0RrM8crFBx42M3S6xSQFOdIU7SgY8x8LK5dEZmJRokryiEx/N21eiwA==}
+  '@qualcomm-ui/angular-core@3.2.0':
+    resolution: {integrity: sha512-cTI7GUspeGngyyt6my9QvTxKh8NQz8xGMrBz/SIpgFWGnKXWDmMiY+d5eppt8YTY7M2QtEapjclizH/gSyk+Wg==}
     peerDependencies:
       '@angular/cdk': '>=22.1 <24'
       '@angular/common': '>=22.1 <24'
@@ -1527,14 +1530,14 @@ packages:
       '@angular/platform-browser': '>=22.1 <24'
       '@angular/platform-browser-dynamic': '>=22.1 <24'
       '@lucide/angular': '>=1.31.0'
-      '@qualcomm-ui/core': ^1.12.0
-      '@qualcomm-ui/dom': ^1.2.0
-      '@qualcomm-ui/utils': ^1.4.0
+      '@qualcomm-ui/core': ^1.13.0
+      '@qualcomm-ui/dom': ^1.3.0
+      '@qualcomm-ui/utils': ^1.5.0
       '@tanstack/virtual-core': '>=3.13.12'
       typescript: '>=5.9.3 <7'
 
-  '@qualcomm-ui/angular@3.1.0':
-    resolution: {integrity: sha512-W1PcL6VsqOwFOi1D1rGXJkFDZDIIA2SGSkngzXUii9pHPV147o60CSBjKVGBvcUcknMqM5b9p0wBnobs+FKL2g==}
+  '@qualcomm-ui/angular@3.2.0':
+    resolution: {integrity: sha512-/p1MOstUv91fo9/G0x5WPS3s1WDE1IfK2dwZFTiREumGPzTzlKtwvIc6aEDYhizJg39Am1rp37Yz088FhZvelQ==}
     peerDependencies:
       '@angular/cdk': '>=22.1 <24'
       '@angular/common': '>=22.1 <24'
@@ -1544,25 +1547,26 @@ packages:
       '@angular/platform-browser': '>=22.1 <24'
       '@angular/platform-browser-dynamic': '>=22.1 <24'
       '@lucide/angular': '>=1.31.0'
-      '@qualcomm-ui/angular-core': ^3.1.0
-      '@qualcomm-ui/core': ^1.12.0
-      '@qualcomm-ui/qds-core': ^1.36.0
-      '@qualcomm-ui/utils': ^1.4.0
+      '@qualcomm-ui/angular-core': ^3.2.0
+      '@qualcomm-ui/core': ^1.13.0
+      '@qualcomm-ui/qds-core': ^1.37.0
+      '@qualcomm-ui/utils': ^1.5.0
       '@tanstack/virtual-core': '>=3.13.12'
       typescript: '>=5.9.3 <7'
 
-  '@qualcomm-ui/core@1.12.0':
-    resolution: {integrity: sha512-ggDYnW6RHsvERXhw0pmBCNmsEoUd/0TYepj8aKL4DhUGKB4n7SmmkCp2AyVyawNIp60FGdnekl8XhU/QIxYtkQ==}
+  '@qualcomm-ui/core@1.13.0':
+    resolution: {integrity: sha512-xDBuvRD0KMX/+G5vEjC/9G9CeGfxywVBWHQnJZTpVzLj6hTt5f/yH8TeOitVKjoE6/RTKdMo2U+w6YqbOsJVkw==}
     peerDependencies:
+      '@internationalized/date': '>=3.6.4'
       '@internationalized/number': '>=3.6.4'
-      '@qualcomm-ui/dom': ^1.2.0
-      '@qualcomm-ui/utils': ^1.4.0
+      '@qualcomm-ui/dom': ^1.3.0
+      '@qualcomm-ui/utils': ^1.5.0
 
-  '@qualcomm-ui/dom@1.2.0':
-    resolution: {integrity: sha512-UEV+Vq8jmde3ixC7CBO0g6cPAKJzVC4UBf8WMUGPJyT3d/pU/JQ1fua/4DafRI17K/B4QTEnHUBg4xjpm2OQPw==}
+  '@qualcomm-ui/dom@1.3.0':
+    resolution: {integrity: sha512-HKzGgYyLI/ZczmccGCT8JG6ArBLh1xHAKPObaLjBhNt/5ym7yAJuf3aFN+GJFNnfMlhtZMiJiuWJNU7/a1d8wg==}
     peerDependencies:
       '@floating-ui/dom': '>=1.7.0'
-      '@qualcomm-ui/utils': ^1.4.0
+      '@qualcomm-ui/utils': ^1.5.0
 
   '@qualcomm-ui/eslint-config-angular@3.0.0':
     resolution: {integrity: sha512-qrFHR1anHl17dSYiis02WmkrYCJ6fbmDqqKbuF2HTl11BOk6jGIOlfZHjHwhsv2YYbJezardxHuAOFZTbodkAA==}
@@ -1605,11 +1609,11 @@ packages:
     peerDependencies:
       oxfmt: '>=0.51.0'
 
-  '@qualcomm-ui/qds-core@1.36.0':
-    resolution: {integrity: sha512-am0/uB4pEtq5BA2FUkHWIvEsuLfxwVHINEowGVc4hvyjNbezlOBjEOFYkeocQnHt6UFZ0aLEt89zbEWtLshCuw==}
+  '@qualcomm-ui/qds-core@1.37.0':
+    resolution: {integrity: sha512-aWI4PojEtbzHgoDyVa+BMT76a73GMMo50ezoDIm2I39iXceQWmU9Kmw1TKNUvfp2E4aqjlsQVD0sE1QlMe8NiQ==}
     peerDependencies:
-      '@qualcomm-ui/core': ^1.12.0
-      '@qualcomm-ui/utils': ^1.4.0
+      '@qualcomm-ui/core': ^1.13.0
+      '@qualcomm-ui/utils': ^1.5.0
 
   '@qualcomm-ui/tailwind-plugin@1.10.0':
     resolution: {integrity: sha512-pljnPPuXv7tKWRkQd/D+N9zeqOq7QapnxzRoVNfzaYv9/UBhuAsTcoPZmLeWXYMf3kv6XL+GpeuoisfOz/z3BQ==}
@@ -1621,8 +1625,10 @@ packages:
     peerDependencies:
       typescript: '>=5.7.3'
 
-  '@qualcomm-ui/utils@1.4.0':
-    resolution: {integrity: sha512-KtTCmU2YU/Kn01AYcIVA5gh59XoxYFxiZ2slg/G8R84OaHNyRdOb0XkNoVYXx+N9tyVhPvaTywtndpubb2h7gQ==}
+  '@qualcomm-ui/utils@1.5.0':
+    resolution: {integrity: sha512-vOLbU5HXVITo7bFYWXkJwWFzyXXgcLT1Cibd5uUqMi0+fXk29pOMMnd/C72LbKQxWfWMWK2Hs9AspBHGhWTs9g==}
+    peerDependencies:
+      '@internationalized/date': '>=3.6.4'
 
   '@rolldown/binding-android-arm64@1.1.5':
     resolution: {integrity: sha512-lZg8fqIv2v7FF237bwMgzGZEJvGL79/s5knJ/i6FmsGF4XXlzccZ4jb+TrFIxtSSxFtIpdsgrPZeMk1I9AFcyQ==}
@@ -5292,6 +5298,10 @@ snapshots:
     optionalDependencies:
       '@types/node': 26.2.0
 
+  '@internationalized/date@3.12.3':
+    dependencies:
+      '@swc/helpers': 0.5.21
+
   '@internationalized/number@3.6.6':
     dependencies:
       '@swc/helpers': 0.5.21
@@ -5682,7 +5692,7 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
-  '@qualcomm-ui/angular-core@3.1.0(d75c6f268a3f7a28652dc92a554beb51)':
+  '@qualcomm-ui/angular-core@3.2.0(8d72557c85b9cf32340f13477bac07ae)':
     dependencies:
       '@angular/cdk': 22.1.3(@angular/common@22.1.3(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(@angular/platform-browser@22.1.3(@angular/common@22.1.3(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2)))(rxjs@7.8.2)
       '@angular/common': 22.1.3(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(rxjs@7.8.2)
@@ -5692,14 +5702,14 @@ snapshots:
       '@angular/platform-browser': 22.1.3(@angular/common@22.1.3(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))
       '@angular/platform-browser-dynamic': 22.1.2(@angular/common@22.1.3(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/compiler@22.1.3)(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(@angular/platform-browser@22.1.3(@angular/common@22.1.3(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2)))
       '@lucide/angular': 1.33.0(@angular/common@22.1.3(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))
-      '@qualcomm-ui/core': 1.12.0(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.2.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.4.0))(@qualcomm-ui/utils@1.4.0)
-      '@qualcomm-ui/dom': 1.2.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.4.0)
-      '@qualcomm-ui/utils': 1.4.0
+      '@qualcomm-ui/core': 1.13.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
+      '@qualcomm-ui/dom': 1.3.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
+      '@qualcomm-ui/utils': 1.5.0(@internationalized/date@3.12.3)
       '@tanstack/virtual-core': 3.15.0
       tslib: 2.8.1
       typescript: 6.0.3
 
-  '@qualcomm-ui/angular@3.1.0(289069f443d9b0b6509c65b74ee1502d)':
+  '@qualcomm-ui/angular@3.2.0(0e6ff7a6f5729345de9b8dc091cb5565)':
     dependencies:
       '@angular/cdk': 22.1.3(@angular/common@22.1.3(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(@angular/platform-browser@22.1.3(@angular/common@22.1.3(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2)))(rxjs@7.8.2)
       '@angular/common': 22.1.3(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(rxjs@7.8.2)
@@ -5709,24 +5719,25 @@ snapshots:
       '@angular/platform-browser': 22.1.3(@angular/common@22.1.3(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))
       '@angular/platform-browser-dynamic': 22.1.2(@angular/common@22.1.3(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/compiler@22.1.3)(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(@angular/platform-browser@22.1.3(@angular/common@22.1.3(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2)))
       '@lucide/angular': 1.33.0(@angular/common@22.1.3(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.1.3(@angular/compiler@22.1.3)(rxjs@7.8.2))
-      '@qualcomm-ui/angular-core': 3.1.0(d75c6f268a3f7a28652dc92a554beb51)
-      '@qualcomm-ui/core': 1.12.0(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.2.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.4.0))(@qualcomm-ui/utils@1.4.0)
-      '@qualcomm-ui/qds-core': 1.36.0(@qualcomm-ui/core@1.12.0(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.2.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.4.0))(@qualcomm-ui/utils@1.4.0))(@qualcomm-ui/utils@1.4.0)
-      '@qualcomm-ui/utils': 1.4.0
+      '@qualcomm-ui/angular-core': 3.2.0(8d72557c85b9cf32340f13477bac07ae)
+      '@qualcomm-ui/core': 1.13.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
+      '@qualcomm-ui/qds-core': 1.37.0(@qualcomm-ui/core@1.13.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
+      '@qualcomm-ui/utils': 1.5.0(@internationalized/date@3.12.3)
       '@tanstack/virtual-core': 3.15.0
       tslib: 2.8.1
       typescript: 6.0.3
 
-  '@qualcomm-ui/core@1.12.0(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.2.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.4.0))(@qualcomm-ui/utils@1.4.0)':
+  '@qualcomm-ui/core@1.13.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))':
     dependencies:
+      '@internationalized/date': 3.12.3
       '@internationalized/number': 3.6.6
-      '@qualcomm-ui/dom': 1.2.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.4.0)
-      '@qualcomm-ui/utils': 1.4.0
+      '@qualcomm-ui/dom': 1.3.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
+      '@qualcomm-ui/utils': 1.5.0(@internationalized/date@3.12.3)
 
-  '@qualcomm-ui/dom@1.2.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.4.0)':
+  '@qualcomm-ui/dom@1.3.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))':
     dependencies:
       '@floating-ui/dom': 1.7.6
-      '@qualcomm-ui/utils': 1.4.0
+      '@qualcomm-ui/utils': 1.5.0(@internationalized/date@3.12.3)
 
   '@qualcomm-ui/eslint-config-angular@3.0.0(angular-eslint@22.1.0(@angular/cli@22.1.5(@types/node@26.2.0)(chokidar@5.0.0)(supports-color@7.2.0))(chokidar@5.0.0)(eslint@10.8.1(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript-eslint@8.67.0(eslint@10.8.1(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(typescript@6.0.3))(eslint-plugin-oxfmt@0.9.0(eslint@10.8.1(jiti@2.7.0)(supports-color@7.2.0))(oxfmt@0.64.0))(eslint@10.8.1(jiti@2.7.0)(supports-color@7.2.0))(oxfmt@0.64.0)(typescript-eslint@8.67.0(eslint@10.8.1(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(typescript@6.0.3)':
     dependencies:
@@ -5765,10 +5776,10 @@ snapshots:
     dependencies:
       oxfmt: 0.64.0
 
-  '@qualcomm-ui/qds-core@1.36.0(@qualcomm-ui/core@1.12.0(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.2.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.4.0))(@qualcomm-ui/utils@1.4.0))(@qualcomm-ui/utils@1.4.0)':
+  '@qualcomm-ui/qds-core@1.37.0(@qualcomm-ui/core@1.13.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))':
     dependencies:
-      '@qualcomm-ui/core': 1.12.0(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.2.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.4.0))(@qualcomm-ui/utils@1.4.0)
-      '@qualcomm-ui/utils': 1.4.0
+      '@qualcomm-ui/core': 1.13.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.0(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
+      '@qualcomm-ui/utils': 1.5.0(@internationalized/date@3.12.3)
 
   '@qualcomm-ui/tailwind-plugin@1.10.0(tailwindcss@4.3.3)':
     dependencies:
@@ -5778,7 +5789,9 @@ snapshots:
     dependencies:
       typescript: 6.0.3
 
-  '@qualcomm-ui/utils@1.4.0': {}
+  '@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)':
+    dependencies:
+      '@internationalized/date': 3.12.3
 
   '@rolldown/binding-android-arm64@1.1.5':
     optional: true
