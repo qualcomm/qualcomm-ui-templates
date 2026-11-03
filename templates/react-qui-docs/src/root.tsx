@@ -17,7 +17,7 @@ import {
 import {getPages} from "@qualcomm-ui/docs-plugin/markdown-content"
 import type {SiteData} from "@qualcomm-ui/mdx-common"
 import {siteData} from "@qualcomm-ui/mdx-vite-plugin"
-import {SiteContextProvider} from "@qualcomm-ui/react-mdx/context"
+import {DocsManifestProvider} from "@qualcomm-ui/react-mdx/context"
 import {
   isTheme,
   PreventFlashOnWrongTheme,
@@ -96,11 +96,11 @@ export function Layout({children}: {children: ReactNode}) {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <SiteContextProvider value={siteContext}>
+      <DocsManifestProvider value={siteContext}>
         <ThemeProvider theme={data?.qdsTheme} themeAction="/action/set-theme">
           {children}
         </ThemeProvider>
-      </SiteContextProvider>
+      </DocsManifestProvider>
     </QueryClientProvider>
   )
 }

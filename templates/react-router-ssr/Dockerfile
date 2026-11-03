@@ -9,7 +9,7 @@ ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 RUN apt update && apt install -y git && rm -rf /var/lib/apt/lists/*
 
 # install and build
-RUN corepack enable
+RUN npm i -g corepack && corepack enable
 RUN pnpm install --frozen-lockfile
 RUN pnpm build
 ENV NODE_ENV=production
