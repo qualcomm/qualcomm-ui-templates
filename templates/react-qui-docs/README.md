@@ -11,7 +11,7 @@ A modern, production-ready template for building full-stack React applications u
 - 🔒 TypeScript by default
 - 🎉 TailwindCSS for styling
 - 📖 [React Router docs](https://reactrouter.com/)
-- [QUI docs](https://docs-next.qui.qualcomm.com) for MDX enhancements
+- [QUI docs](https://docs.qui.qualcomm.com) for MDX enhancements
 
 ## Getting Started
 

@@ -3,7 +3,7 @@
 QUI Angular project template featuring:
 
 - Angular SSR
-- [QUI Angular](https://angular-next.qui.qualcomm.com)
+- [QUI Angular](https://angular.qui.qualcomm.com)
 - Vitest Browser Mode + Playwright
 - ESLint
 - Tailwind CSS

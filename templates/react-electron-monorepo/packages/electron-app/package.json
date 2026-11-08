@@ -25,12 +25,12 @@
   "dependencies": {
     "@project/react-app": "workspace:*",
     "@project/shared-types": "workspace:*",
-    "@qualcomm-ui/tsconfig": "^2.3.0",
+    "@qualcomm-ui/tsconfig": "^3.0.0",
     "electron-store": "11.0.2"
   },
   "devDependencies": {
     "@playwright/test": "1.62.1",
-    "@qualcomm-ui/esbuild": "^1.0.7",
+    "@qualcomm-ui/esbuild": "^1.0.8",
     "@types/mime": "4.0.0",
     "@types/node": "26.2.0",
     "cross-env": "10.1.0",
@@ -41,7 +41,7 @@
     "npm-run-all2": "9.0.3",
     "ora": "9.4.1",
     "shx": "0.4.0",
-    "tsx": "4.23.12",
+    "tsx": "4.23.13",
     "typescript": "6.0.3"
   }
 }

@@ -15,11 +15,7 @@ export function Welcome(): ReactNode {
         </h2>
         <p className="text-neutral-secondary font-body-md mb-4">
           This is a preconfigured QUI starter application. Refer to the{" "}
-          <Link
-            href="https://react-next.qui.qualcomm.com"
-            size="md"
-            target="_blank"
-          >
+          <Link href="https://react.qui.qualcomm.com" size="md" target="_blank">
             documentation
           </Link>{" "}
           for component usage.
@@ -31,7 +27,7 @@ export function Welcome(): ReactNode {
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">
-        <div className="rounded-lg p-6 shadow-sm">
+        <div className="bg-neutral-01 rounded-lg p-6 shadow-sm">
           <h3 className="font-heading-md text-neutral-primary mb-3">
             Components
           </h3>
@@ -41,7 +37,7 @@ export function Welcome(): ReactNode {
           </p>
         </div>
 
-        <div className="rounded-lg p-6 shadow-sm">
+        <div className="bg-neutral-01 rounded-lg p-6 shadow-sm">
           <h3 className="font-heading-md text-neutral-primary mb-3">Theming</h3>
           <p className="text-neutral-secondary font-body-sm">
             Full support for light and dark themes with automatic persistence
@@ -49,7 +45,7 @@ export function Welcome(): ReactNode {
           </p>
         </div>
 
-        <div className="rounded-lg p-6 shadow-sm">
+        <div className="bg-neutral-01 rounded-lg p-6 shadow-sm">
           <h3 className="font-heading-md text-neutral-primary mb-3">ESLint</h3>
           <p className="text-neutral-secondary font-body-sm">
             Preconfigured ESLint configuration for automatic linting and
@@ -57,13 +53,13 @@ export function Welcome(): ReactNode {
           </p>
         </div>
 
-        <div className="rounded-lg p-6 shadow-sm">
+        <div className="bg-neutral-01 rounded-lg p-6 shadow-sm">
           <h3 className="font-heading-md text-neutral-primary mb-3">
             Tailwind
           </h3>
           <p className="text-neutral-secondary font-body-sm">
             Tailwind support including theme variables from the the QUI{" "}
-            <Link href="https://react-next.qui.qualcomm.com/integrations/tailwind">
+            <Link href="https://react.qui.qualcomm.com/integrations/tailwind">
               Tailwind Plugin
             </Link>
           </p>

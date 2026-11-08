@@ -27,23 +27,23 @@
   },
   "devDependencies": {
     "@eslint/js": "9.39.5",
-    "@qualcomm-ui/esbuild": "^1.0.7",
-    "@qualcomm-ui/eslint-config-typescript": "^4.0.0",
-    "@qualcomm-ui/oxfmt-config": "^1.0.1",
-    "@qualcomm-ui/tsconfig": "^2.3.0",
+    "@qualcomm-ui/esbuild": "^1.0.8",
+    "@qualcomm-ui/eslint-config-typescript": "^4.0.1",
+    "@qualcomm-ui/oxfmt-config": "^1.0.2",
+    "@qualcomm-ui/tsconfig": "^3.0.0",
     "@types/node": "26.2.0",
     "esbuild": "0.28.2",
     "eslint": "9.39.5",
     "globals": "17.11.0",
-    "npm-check-updates": "23.0.2",
+    "npm-check-updates": "23.1.1",
     "npm-run-all2": "9.0.3",
-    "oxfmt": "0.64.0",
+    "oxfmt": "0.77.0",
     "shx": "0.4.0",
-    "tsx": "4.23.12",
+    "tsx": "4.23.13",
     "typescript": "6.0.3",
     "typescript-eslint": "8.67.0",
-    "vite": "8.2.1",
+    "vite": "8.3.6",
     "vitest": "4.1.11"
   },
-  "packageManager": "pnpm@12.6.0+sha512.3ef68f951cb111ac204b4a5a16f0b2ddf0da56a96e0413e81d855d9f0b55ef926714709028e1cd00c405c2c5fb7b9e8ec4dc46777c805d0373c2f2ff00fd20ec"
+  "packageManager": "pnpm@12.18.0+sha512.9d7882d5dc82147ecfc4e062aa34834e0ad0296710a1837a1115ae012127d36b7109e321ac1598a1dd0a65597681b1e99917e12ed0d749eae91187943363beb3"
 }

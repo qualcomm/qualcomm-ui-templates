@@ -92,7 +92,7 @@ export function MdxLayout({children, ...props}: Props): ReactNode {
           <span>
             This site is built with{" "}
             <Link
-              href="https://docs-next.qui.qualcomm.com/"
+              href="https://docs.qui.qualcomm.com/"
               size="md"
               target="_blank"
             >

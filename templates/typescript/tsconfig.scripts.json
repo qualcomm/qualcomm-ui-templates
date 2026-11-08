@@ -1,11 +1,12 @@
 {
-  "extends": "@qualcomm-ui/tsconfig/tsconfig.strict.json",
+  "extends": "@qualcomm-ui/tsconfig/tsconfig.nodenext.json",
   "compilerOptions": {
     "composite": true,
     "types": ["node"],
+    "outDir": "node_modules/.tmp/tsc-out-scripts",
     "tsBuildInfoFile": "node_modules/.tmp/.tsbuildinfo-node"
   },
   "include": [
-    "*.ts"
+    "*.ts", "package.json"
   ]
 }

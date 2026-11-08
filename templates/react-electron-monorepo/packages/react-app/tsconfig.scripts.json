@@ -1,5 +1,5 @@
 {
-  "extends": "@qualcomm-ui/tsconfig/tsconfig.strict.json",
+  "extends": "@qualcomm-ui/tsconfig/tsconfig.nodenext.json",
   "compilerOptions": {
     "composite": true,
     "tsBuildInfoFile": "node_modules/.tmp/.tsbuildinfo-node"

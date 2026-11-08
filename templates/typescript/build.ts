@@ -13,7 +13,7 @@ import {
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
-import pkg from "./package.json"
+import pkg from "./package.json" with {type: "json"}
 
 async function collectEntryPoints() {
   return (await collectFolders("./src")).reduce(
