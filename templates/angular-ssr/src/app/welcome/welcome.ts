@@ -18,7 +18,7 @@ import {LinkDirective} from "@qualcomm-ui/angular/link"
         <p class="text-neutral-secondary font-body-md mb-4">
           This is a preconfigured QUI starter application. Refer to the
           <a
-            href="https://angular-next.qui.qualcomm.com"
+            href="https://angular.qui.qualcomm.com"
             q-link
             size="md"
             target="_blank"
@@ -63,7 +63,7 @@ import {LinkDirective} from "@qualcomm-ui/angular/link"
           <p class="text-neutral-secondary font-body-sm">
             Tailwind support including theme variables from the the QUI
             <a
-              href="https://angular-next.qui.qualcomm.com/integrations/tailwind"
+              href="https://angular.qui.qualcomm.com/integrations/tailwind"
               q-link
             >
               Tailwind Plugin

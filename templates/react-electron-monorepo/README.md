@@ -4,7 +4,7 @@ This template can be used to kickstart your desktop application development.
 
 - [React](https://react.dev/)
 - [Electron](https://www.electronjs.org/) v28+
-- [QUI React](https://react-next.qui.qualcomm.com/)
+- [QUI React](https://react.qui.qualcomm.com/)
 - [ESBuild](https://esbuild.github.io/) for bundling
 - [Vite](https://vitejs.dev/)
 - [React Router](https://tanstack.com/router/latest/docs/framework/react/overview) framework mode, file-based routing

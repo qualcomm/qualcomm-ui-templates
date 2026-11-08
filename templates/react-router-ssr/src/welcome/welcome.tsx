@@ -15,11 +15,7 @@ export function Welcome(): ReactNode {
         </h2>
         <p className="text-neutral-secondary font-body-md mb-4">
           This is a preconfigured QUI starter application. Refer to the{" "}
-          <Link
-            href="https://react-next.qui.qualcomm.com"
-            size="md"
-            target="_blank"
-          >
+          <Link href="https://react.qui.qualcomm.com" size="md" target="_blank">
             documentation
           </Link>{" "}
           for component usage.
@@ -63,7 +59,7 @@ export function Welcome(): ReactNode {
           </h3>
           <p className="text-neutral-secondary font-body-sm">
             Tailwind support including theme variables from the the QUI{" "}
-            <Link href="https://react-next.qui.qualcomm.com/integrations/tailwind">
+            <Link href="https://react.qui.qualcomm.com/integrations/tailwind">
               Tailwind Plugin
             </Link>
           </p>
