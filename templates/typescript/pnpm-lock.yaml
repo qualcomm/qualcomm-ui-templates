@@ -167,8 +167,8 @@ importers:
   .:
     dependencies:
       '@qualcomm-ui/utils':
-        specifier: ^1.5.0
-        version: 1.5.0(@internationalized/date@3.12.3)
+        specifier: ^1.7.0
+        version: 1.7.0(@internationalized/date@3.12.3)
     devDependencies:
       '@eslint/js':
         specifier: 9.39.5
@@ -657,8 +657,8 @@ packages:
     peerDependencies:
       typescript: '>=6.0.3'
 
-  '@qualcomm-ui/utils@1.5.0':
-    resolution: {integrity: sha512-vOLbU5HXVITo7bFYWXkJwWFzyXXgcLT1Cibd5uUqMi0+fXk29pOMMnd/C72LbKQxWfWMWK2Hs9AspBHGhWTs9g==}
+  '@qualcomm-ui/utils@1.7.0':
+    resolution: {integrity: sha512-z24BBLYIoocGSoc9xDlbbQNvyAPWXOpZvItpNmeVEwe6zuGxHGKCdnSZIo24gGBc2YupYu8/rtVQiK1UXoiCXA==}
     peerDependencies:
       '@internationalized/date': '>=3.6.4'
 
@@ -2894,7 +2894,7 @@ snapshots:
     dependencies:
       typescript: 6.0.3
 
-  '@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)':
+  '@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)':
     dependencies:
       '@internationalized/date': 3.12.3
 

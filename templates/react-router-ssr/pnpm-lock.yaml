@@ -167,32 +167,32 @@ importers:
   .:
     dependencies:
       '@qualcomm-ui/core':
-        specifier: ^1.14.0
-        version: 1.14.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
+        specifier: ^1.16.0
+        version: 1.16.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))
       '@qualcomm-ui/dom':
-        specifier: ^1.3.1
-        version: 1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
+        specifier: ^1.3.5
+        version: 1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))
       '@qualcomm-ui/mdx-vite':
-        specifier: ^5.0.0
-        version: 5.0.0(@qualcomm-ui/mdx-common@2.7.0(@qualcomm-ui/typedoc-common@1.0.8)(fuzzysort@3.1.0))(@qualcomm-ui/typedoc-common@1.0.8)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))(lodash-es@4.18.1)(minimatch@11.0.5)(rehype-mdx-code-props@3.0.1(supports-color@7.2.0))(remark-frontmatter@5.0.0(supports-color@7.2.0))(remark-gfm@4.0.1(supports-color@7.2.0))(remark-mdx-frontmatter@4.0.0)(shiki@4.4.3)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.3.6(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(zod@4.4.3)
+        specifier: ^5.2.1
+        version: 5.2.1(@qualcomm-ui/mdx-common@2.8.0(@qualcomm-ui/typedoc-common@1.2.0)(fuzzysort@3.1.0))(@qualcomm-ui/typedoc-common@1.2.0)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))(lodash-es@4.18.1)(minimatch@11.0.5)(rehype-mdx-code-props@3.0.1(supports-color@7.2.0))(remark-frontmatter@5.0.0(supports-color@7.2.0))(remark-gfm@4.0.1(supports-color@7.2.0))(remark-mdx-frontmatter@4.0.0)(shiki@4.4.3)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.3.6(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(zod@4.4.3)
       '@qualcomm-ui/qds-core':
-        specifier: ^2.0.0
-        version: 2.0.0(@qualcomm-ui/core@1.14.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
+        specifier: ^2.2.0
+        version: 2.2.0(@qualcomm-ui/core@1.16.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))
       '@qualcomm-ui/react':
-        specifier: ^2.0.0
-        version: 2.0.0(3f4ec61dcd1e2f23d51591811ee0d8df)
+        specifier: ^2.3.0
+        version: 2.3.0(ee73d09108378f7ce96c85832966ea7e)
       '@qualcomm-ui/react-core':
-        specifier: ^1.10.0
-        version: 1.10.0(@qualcomm-ui/core@1.14.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/dom@1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))(@tanstack/react-virtual@3.14.10(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(lucide-react@1.33.0(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+        specifier: ^1.12.0
+        version: 1.12.0(@qualcomm-ui/core@1.16.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/dom@1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))(@tanstack/react-virtual@3.14.10(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(lucide-react@1.33.0(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@qualcomm-ui/react-router-utils':
-        specifier: ^3.1.1
-        version: 3.1.1(@qualcomm-ui/mdx-common@2.7.0(@qualcomm-ui/typedoc-common@1.0.8)(fuzzysort@3.1.0))(@qualcomm-ui/mdx-vite@5.0.0(@qualcomm-ui/mdx-common@2.7.0(@qualcomm-ui/typedoc-common@1.0.8)(fuzzysort@3.1.0))(@qualcomm-ui/typedoc-common@1.0.8)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))(lodash-es@4.18.1)(minimatch@11.0.5)(rehype-mdx-code-props@3.0.1(supports-color@7.2.0))(remark-frontmatter@5.0.0(supports-color@7.2.0))(remark-gfm@4.0.1(supports-color@7.2.0))(remark-mdx-frontmatter@4.0.0)(shiki@4.4.3)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.3.6(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(zod@4.4.3))(minimatch@11.0.5)(react-dom@19.3.1(react@19.3.1))(react-router@8.5.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1)
+        specifier: ^3.1.6
+        version: 3.1.6(@qualcomm-ui/mdx-common@2.8.0(@qualcomm-ui/typedoc-common@1.2.0)(fuzzysort@3.1.0))(@qualcomm-ui/mdx-vite@5.2.1(@qualcomm-ui/mdx-common@2.8.0(@qualcomm-ui/typedoc-common@1.2.0)(fuzzysort@3.1.0))(@qualcomm-ui/typedoc-common@1.2.0)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))(lodash-es@4.18.1)(minimatch@11.0.5)(rehype-mdx-code-props@3.0.1(supports-color@7.2.0))(remark-frontmatter@5.0.0(supports-color@7.2.0))(remark-gfm@4.0.1(supports-color@7.2.0))(remark-mdx-frontmatter@4.0.0)(shiki@4.4.3)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.3.6(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(zod@4.4.3))(minimatch@11.0.5)(react-dom@19.3.1(react@19.3.1))(react-router@8.5.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1)
       '@qualcomm-ui/tailwind-plugin':
-        specifier: ^2.0.0
-        version: 2.0.0(tailwindcss@4.3.3)
+        specifier: ^2.0.1
+        version: 2.0.1(tailwindcss@4.3.3)
       '@qualcomm-ui/utils':
-        specifier: ^1.5.0
-        version: 1.5.0(@internationalized/date@3.12.3)
+        specifier: ^1.7.0
+        version: 1.7.0(@internationalized/date@3.12.3)
       '@react-router/node':
         specifier: 8.5.1
         version: 8.5.1(react-router@8.5.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(typescript@6.0.3)
@@ -222,8 +222,8 @@ importers:
         specifier: 9.39.5
         version: 9.39.5
       '@qualcomm-ui/eslint-config-react':
-        specifier: ^2.0.0
-        version: 2.0.0(@typescript-eslint/eslint-plugin@8.67.0(@typescript-eslint/parser@8.67.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(@typescript-eslint/parser@8.67.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint-plugin-import@2.32.0)(eslint-plugin-react-hooks@7.1.1(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0))(eslint-plugin-react@7.37.5(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0)))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(typescript-eslint@8.67.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(typescript@6.0.3)
+        specifier: ^2.0.1
+        version: 2.0.1(@typescript-eslint/eslint-plugin@8.67.0(@typescript-eslint/parser@8.67.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(@typescript-eslint/parser@8.67.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint-plugin-import@2.32.0)(eslint-plugin-react-hooks@7.1.1(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0))(eslint-plugin-react@7.37.5(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0)))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(typescript-eslint@8.67.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(typescript@6.0.3)
       '@qualcomm-ui/eslint-config-typescript':
         specifier: ^4.0.1
         version: 4.0.1(02364b48b86f3ec18b624f9277ab29d0)
@@ -950,22 +950,22 @@ packages:
   '@protobufjs/utf8@1.1.2':
     resolution: {integrity: sha512-b1UQwcEZ4yCnMCD8DAL1VlbvBJE9/IX4FTIp7BG1xYpf29SLazLSrqUkj4w7Y5y7cCVP6E5tcqqcI0xemPkHug==}
 
-  '@qualcomm-ui/core@1.14.0':
-    resolution: {integrity: sha512-NdsfJrF6CZklq1nN/hftibwFj1ddePfc1MNdua+xRIyFvxEe88Iym/cjZ8vf9JW6TZmudfdEDx806fkyJtlL7Q==}
+  '@qualcomm-ui/core@1.16.0':
+    resolution: {integrity: sha512-Ld87MgQz6+oeP2MQivBIKUyvyAr1bEJmVCBI5ekuvL/a/y2AjfXGsrTME5mWn8P1O1+taCO+EpDfHyb5Kgz6mQ==}
     peerDependencies:
       '@internationalized/date': '>=3.6.4'
       '@internationalized/number': '>=3.6.4'
-      '@qualcomm-ui/dom': ^1.3.1
-      '@qualcomm-ui/utils': ^1.5.0
+      '@qualcomm-ui/dom': ^1.3.5
+      '@qualcomm-ui/utils': ^1.7.0
 
-  '@qualcomm-ui/dom@1.3.1':
-    resolution: {integrity: sha512-Wl4j2AvtVETnMq33TDMkmX5eUkN/1M7sj+GfgZFAkJrhyx9/BrnI9NhGFWxfRyDev96GOTxoCacORy+Ggk7Fxw==}
+  '@qualcomm-ui/dom@1.3.5':
+    resolution: {integrity: sha512-q+bmL/3YEKdtQ5Culi38jHt89RqfYDUO8y8bl/V+hOUTXiQODJLk4aBuEZhTahySuh8QjYVX5gva7WgSyhLTnA==}
     peerDependencies:
       '@floating-ui/dom': '>=1.7.0'
-      '@qualcomm-ui/utils': ^1.5.0
+      '@qualcomm-ui/utils': ^1.7.0
 
-  '@qualcomm-ui/eslint-config-react@2.0.0':
-    resolution: {integrity: sha512-NDI+oD5MfjntIt3roRorTwHRmOo087dYC+RIe60mccv0vnvoJvKHpBEnZoqR8O9CKTz8Now5GKQaVPy4RRw2PA==}
+  '@qualcomm-ui/eslint-config-react@2.0.1':
+    resolution: {integrity: sha512-5mMST5bX2mGXXu8JZkoEvtTlE55afQBU1jXCn5rwK4OW5Opd1guqQwOVUVT1L+jmJV56b18hYsTD2iJsmUQz9g==}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': '>=8.31.1'
       '@typescript-eslint/parser': '>=8.31.1'
@@ -1002,20 +1002,20 @@ packages:
     peerDependencies:
       eslint: ^9.0.0
 
-  '@qualcomm-ui/mdx-common@2.7.0':
-    resolution: {integrity: sha512-rcNFtnCxC/TduNQ57kCuxqout2P4QoqVca47o3CPYxJAxm1glYYrRsvimm56VjiyPiZLAoOEhEQHPWe2veX4KA==}
+  '@qualcomm-ui/mdx-common@2.8.0':
+    resolution: {integrity: sha512-FIPwVEJ/CCISI9Xg48iD+7sYh/bJJqlDDCThG7kDGw2rQD2fuHZ6/pNC/MoZrqgpLxs0n7NCXH3HvAi68joBkw==}
     peerDependencies:
-      '@qualcomm-ui/typedoc-common': ^1.0.8
+      '@qualcomm-ui/typedoc-common': ^1.2.0
       fuzzysort: '>=3'
 
-  '@qualcomm-ui/mdx-vite@5.0.0':
-    resolution: {integrity: sha512-NEoa+T4WmRL21IVjniINb0TX1s9An+DeVJlyNOjqV80BO/4hCJDFZy9txe4M5OkhNkyGr+hq8sTCGvXYSMElYA==}
+  '@qualcomm-ui/mdx-vite@5.2.1':
+    resolution: {integrity: sha512-VqygUNQDiGp4ntNPKnspxNb8gUaQSNwzs6Z2CS2aX03OiYCydZskHWDBrD5G0jpJ6YTYdomCEwNWfnTgeMQevQ==}
     engines: {node: '>=20'}
     hasBin: true
     peerDependencies:
-      '@qualcomm-ui/mdx-common': ^2.7.0
-      '@qualcomm-ui/typedoc-common': ^1.0.8
-      '@qualcomm-ui/utils': ^1.5.0
+      '@qualcomm-ui/mdx-common': ^2.8.0
+      '@qualcomm-ui/typedoc-common': ^1.2.0
+      '@qualcomm-ui/utils': ^1.7.0
       lodash-es: '>=4.17.21 <5'
       minimatch: '>=10'
       rehype-mdx-code-props: '>=3 <4'
@@ -1032,48 +1032,48 @@ packages:
     peerDependencies:
       oxfmt: '>=0.75.0'
 
-  '@qualcomm-ui/qds-core@2.0.0':
-    resolution: {integrity: sha512-IUVPSeKx7nWxlnMeabrodUsaMcDkEanoYXHNoqJBwDXDBaKqZKW8mQH0s8kVHHKf2+wB8zXOdnMvzd4r5UpgOw==}
+  '@qualcomm-ui/qds-core@2.2.0':
+    resolution: {integrity: sha512-OX+9NQuDIi/A3+rjL5BNt1Jd3LjF8naUw8sRl5l/RXy92KL3VHPTjqMVHadY+rNk0D1LRF0+dXbtEjabs6e/1Q==}
     peerDependencies:
-      '@qualcomm-ui/core': ^1.14.0
-      '@qualcomm-ui/utils': ^1.5.0
+      '@qualcomm-ui/core': ^1.16.0
+      '@qualcomm-ui/utils': ^1.7.0
 
-  '@qualcomm-ui/react-core@1.10.0':
-    resolution: {integrity: sha512-Op9Fq8GPDx5GU5srlTgkhRu9r7LNv4tRMuRrSiYkfBW0yeaEwCvqVqbybVGlsX8SBEPjxtLLELD/l1XUtvKQag==}
+  '@qualcomm-ui/react-core@1.12.0':
+    resolution: {integrity: sha512-2xPbJQ2aZjNw3B8NVDXpc1XJsB7OcA5e4KpNcZe2GpMVjEGeSUu3a3DwIRGDhKIHtDNKEeJN+wBU66xrGOXmdw==}
     peerDependencies:
-      '@qualcomm-ui/core': ^1.14.0
-      '@qualcomm-ui/dom': ^1.3.1
-      '@qualcomm-ui/utils': ^1.5.0
+      '@qualcomm-ui/core': ^1.16.0
+      '@qualcomm-ui/dom': ^1.3.5
+      '@qualcomm-ui/utils': ^1.7.0
       '@tanstack/react-virtual': '>=3.13.9'
       lucide-react: '>=0.483.0 <2'
       react: '>=19.0.0'
       react-dom: '>=19.0.0'
 
-  '@qualcomm-ui/react-router-utils@3.1.1':
-    resolution: {integrity: sha512-08W8pTOMrSWfNjjRdpPR84F6hae/rzG0PA0y9E8y5Tj1moEjMuTW69Kpn+rdU8HtPIoFjRPCzn81RoSJXp2MYA==}
+  '@qualcomm-ui/react-router-utils@3.1.6':
+    resolution: {integrity: sha512-IXwssWnjCwQP3Gc56ZOA//lAuw7x8MbLlC15Komhs1HnDSMlyTYy2Y+rq2p9XEZwa2n4SIAIWe6THYxb/crAhA==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@qualcomm-ui/mdx-common': ^2.7.0
-      '@qualcomm-ui/mdx-vite': ^5.0.0
+      '@qualcomm-ui/mdx-common': ^2.8.0
+      '@qualcomm-ui/mdx-vite': ^5.2.1
       minimatch: '>=10.0.3'
       react: '>=19.0.0'
       react-dom: '>=19.0.0'
       react-router: '>=7.0.2 <9'
 
-  '@qualcomm-ui/react@2.0.0':
-    resolution: {integrity: sha512-TwvQQqeMCFObq67B05WeErVOyI87Dl8n5Rh7SPPiR2fmO9eD0wKjXbFdahQoISK5H7uH4ABPN53pwBJKNPl8GQ==}
+  '@qualcomm-ui/react@2.3.0':
+    resolution: {integrity: sha512-sS1OG42dwBQ8g/OV0LT8GxTCgF+UI0AZNCLHlsar6kDQZKpq31KptwvcLXW2/+Btks16slUWdgg8K/GZZ4nBWw==}
     peerDependencies:
-      '@qualcomm-ui/core': ^1.14.0
-      '@qualcomm-ui/qds-core': ^2.0.0
-      '@qualcomm-ui/react-core': ^1.10.0
-      '@qualcomm-ui/utils': ^1.5.0
+      '@qualcomm-ui/core': ^1.16.0
+      '@qualcomm-ui/qds-core': ^2.2.0
+      '@qualcomm-ui/react-core': ^1.12.0
+      '@qualcomm-ui/utils': ^1.7.0
       '@tanstack/react-virtual': '>=3.13.9'
       lucide-react: '>=0.483.0 <2'
       react: '>=19.0.0'
       react-dom: '>=19.0.0'
 
-  '@qualcomm-ui/tailwind-plugin@2.0.0':
-    resolution: {integrity: sha512-sFfqOXCnxP8DzKvy7tkz5f0xEgJujYvYdOYLbOi8rCOSUleK+VyKzi4+swJamjaWR9bPzy95TDgZRXHcQQyTpQ==}
+  '@qualcomm-ui/tailwind-plugin@2.0.1':
+    resolution: {integrity: sha512-Rz+E4dU//bu9I/keZPPez1M28oUWCqS/6zxpgwOs/34nj5pu1/KB0O7nrrOPs1u1SwLr0NAFs1c6BOYhKANTrg==}
     peerDependencies:
       tailwindcss: '>=4'
 
@@ -1082,11 +1082,11 @@ packages:
     peerDependencies:
       typescript: '>=6.0.3'
 
-  '@qualcomm-ui/typedoc-common@1.0.8':
-    resolution: {integrity: sha512-WBpO5a1/j9pSFnkjO6qQQ+4KqUcIengkiB6hbPuigQGu5JAAcsp3yEmfxwihC+Zy2Bq+TtR5kNKR9ZSV1msrog==}
+  '@qualcomm-ui/typedoc-common@1.2.0':
+    resolution: {integrity: sha512-jof6JjrvZi6leCMQ+RH/RaUe6qo61uKSfAPjqLph4cY1fOiXciKCHdk4o+CTvVwbgOyeXT645N4bO53egZMmbA==}
 
-  '@qualcomm-ui/utils@1.5.0':
-    resolution: {integrity: sha512-vOLbU5HXVITo7bFYWXkJwWFzyXXgcLT1Cibd5uUqMi0+fXk29pOMMnd/C72LbKQxWfWMWK2Hs9AspBHGhWTs9g==}
+  '@qualcomm-ui/utils@1.7.0':
+    resolution: {integrity: sha512-z24BBLYIoocGSoc9xDlbbQNvyAPWXOpZvItpNmeVEwe6zuGxHGKCdnSZIo24gGBc2YupYu8/rtVQiK1UXoiCXA==}
     peerDependencies:
       '@internationalized/date': '>=3.6.4'
 
@@ -2715,10 +2715,6 @@ packages:
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
-  js-yaml@4.3.1:
-    resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
-    hasBin: true
-
   js-yaml@4.3.2:
     resolution: {integrity: sha512-SFNOvSJ+Dgf/9An904Yx+CgSlIPCkIpao4qo51lpee25TIRejdH3rhR4EZMGoNx3/TP3O+wzWuiTFl4sqbltzA==}
     hasBin: true
@@ -3201,11 +3197,6 @@ packages:
   my-ua-parser@2.0.4:
     resolution: {integrity: sha512-lhPyjoce3SRNXqgozoVti8XWC6oWY/rMcXljvov9IAgHKj2ZTU3dR5iQ7jLrIj02xD4Ggn6doTi7K2pnSbjzeg==}
 
-  nanoid@3.3.18:
-    resolution: {integrity: sha512-DTg4MJbGMWkfi6VZFdNt2/caMbQy4Ou+Op/hJQvGEWcnVfoA1QA+xzRKAzw9jD6+GVOOeYr/mIcuDSdug6F6+w==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-
   nanoid@3.3.20:
     resolution: {integrity: sha512-uKdg2G3GNCKQn9byYOpxbGqrT2fGO5KRt5J/8b3pok8rT6qxGWF6hxMyJiEYtAf+FVyYuD9hRaDqX5uPFYJ4ZQ==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -3430,10 +3421,6 @@ packages:
   postcss-selector-parser@7.1.1:
     resolution: {integrity: sha512-orRsuYpJVw8LdAwqqLykBj9ecS5/cRHlI5+nvTo8LcCKmzDmqVORXtOIYEEQuL9D4BxtA1lm5isAqzQZCoQ6Eg==}
     engines: {node: '>=4'}
-
-  postcss@8.5.26:
-    resolution: {integrity: sha512-u82N74LFzG8ca+dD8puPnplTXoGH4fTPpVGuIbt36G3qvNlkvfD0lEAZSxaly3KX8TS/L1A1gsCEmvKmBcVbkQ==}
-    engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.5.32:
     resolution: {integrity: sha512-LJlKCCAUFKOuZxipUdYw1NzIITEsPcgyOG9LkvRJvuKj/bRzbuRY0ARXvL0pWGpsZvn8jku+LMep2eU0seHp8g==}
@@ -4621,19 +4608,19 @@ snapshots:
 
   '@protobufjs/utf8@1.1.2': {}
 
-  '@qualcomm-ui/core@1.14.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))':
+  '@qualcomm-ui/core@1.16.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))':
     dependencies:
       '@internationalized/date': 3.12.3
       '@internationalized/number': 3.6.6
-      '@qualcomm-ui/dom': 1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
-      '@qualcomm-ui/utils': 1.5.0(@internationalized/date@3.12.3)
+      '@qualcomm-ui/dom': 1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))
+      '@qualcomm-ui/utils': 1.7.0(@internationalized/date@3.12.3)
 
-  '@qualcomm-ui/dom@1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))':
+  '@qualcomm-ui/dom@1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))':
     dependencies:
       '@floating-ui/dom': 1.7.6
-      '@qualcomm-ui/utils': 1.5.0(@internationalized/date@3.12.3)
+      '@qualcomm-ui/utils': 1.7.0(@internationalized/date@3.12.3)
 
-  '@qualcomm-ui/eslint-config-react@2.0.0(@typescript-eslint/eslint-plugin@8.67.0(@typescript-eslint/parser@8.67.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(@typescript-eslint/parser@8.67.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint-plugin-import@2.32.0)(eslint-plugin-react-hooks@7.1.1(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0))(eslint-plugin-react@7.37.5(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0)))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(typescript-eslint@8.67.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(typescript@6.0.3)':
+  '@qualcomm-ui/eslint-config-react@2.0.1(@typescript-eslint/eslint-plugin@8.67.0(@typescript-eslint/parser@8.67.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(@typescript-eslint/parser@8.67.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint-plugin-import@2.32.0)(eslint-plugin-react-hooks@7.1.1(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0))(eslint-plugin-react@7.37.5(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0)))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(typescript-eslint@8.67.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/eslint-plugin': 8.67.0(@typescript-eslint/parser@8.67.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
       '@typescript-eslint/parser': 8.67.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
@@ -4668,16 +4655,16 @@ snapshots:
     dependencies:
       eslint: 9.39.5(jiti@2.7.0)(supports-color@7.2.0)
 
-  '@qualcomm-ui/mdx-common@2.7.0(@qualcomm-ui/typedoc-common@1.0.8)(fuzzysort@3.1.0)':
+  '@qualcomm-ui/mdx-common@2.8.0(@qualcomm-ui/typedoc-common@1.2.0)(fuzzysort@3.1.0)':
     dependencies:
-      '@qualcomm-ui/typedoc-common': 1.0.8
+      '@qualcomm-ui/typedoc-common': 1.2.0
       fuzzysort: 3.1.0
 
-  '@qualcomm-ui/mdx-vite@5.0.0(@qualcomm-ui/mdx-common@2.7.0(@qualcomm-ui/typedoc-common@1.0.8)(fuzzysort@3.1.0))(@qualcomm-ui/typedoc-common@1.0.8)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))(lodash-es@4.18.1)(minimatch@11.0.5)(rehype-mdx-code-props@3.0.1(supports-color@7.2.0))(remark-frontmatter@5.0.0(supports-color@7.2.0))(remark-gfm@4.0.1(supports-color@7.2.0))(remark-mdx-frontmatter@4.0.0)(shiki@4.4.3)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.3.6(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(zod@4.4.3)':
+  '@qualcomm-ui/mdx-vite@5.2.1(@qualcomm-ui/mdx-common@2.8.0(@qualcomm-ui/typedoc-common@1.2.0)(fuzzysort@3.1.0))(@qualcomm-ui/typedoc-common@1.2.0)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))(lodash-es@4.18.1)(minimatch@11.0.5)(rehype-mdx-code-props@3.0.1(supports-color@7.2.0))(remark-frontmatter@5.0.0(supports-color@7.2.0))(remark-gfm@4.0.1(supports-color@7.2.0))(remark-mdx-frontmatter@4.0.0)(shiki@4.4.3)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.3.6(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(zod@4.4.3)':
     dependencies:
-      '@qualcomm-ui/mdx-common': 2.7.0(@qualcomm-ui/typedoc-common@1.0.8)(fuzzysort@3.1.0)
-      '@qualcomm-ui/typedoc-common': 1.0.8
-      '@qualcomm-ui/utils': 1.5.0(@internationalized/date@3.12.3)
+      '@qualcomm-ui/mdx-common': 2.8.0(@qualcomm-ui/typedoc-common@1.2.0)(fuzzysort@3.1.0)
+      '@qualcomm-ui/typedoc-common': 1.2.0
+      '@qualcomm-ui/utils': 1.7.0(@internationalized/date@3.12.3)
       '@shikijs/rehype': 4.4.3
       '@shikijs/transformers': 4.4.3
       chalk: 5.6.2
@@ -4721,8 +4708,8 @@ snapshots:
       vite: 8.3.6(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0)
       zod: 4.4.3
     optionalDependencies:
-      '@qualcomm-ui/tailwind-plugin': 2.0.0(tailwindcss@4.3.3)
-      postcss: 8.5.26
+      '@qualcomm-ui/tailwind-plugin': 2.0.1(tailwindcss@4.3.3)
+      postcss: 8.5.32
       postcss-selector-parser: 7.1.1
       tailwindcss: 4.3.3
     transitivePeerDependencies:
@@ -4732,45 +4719,45 @@ snapshots:
     dependencies:
       oxfmt: 0.77.0
 
-  '@qualcomm-ui/qds-core@2.0.0(@qualcomm-ui/core@1.14.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))':
+  '@qualcomm-ui/qds-core@2.2.0(@qualcomm-ui/core@1.16.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))':
     dependencies:
-      '@qualcomm-ui/core': 1.14.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
-      '@qualcomm-ui/utils': 1.5.0(@internationalized/date@3.12.3)
+      '@qualcomm-ui/core': 1.16.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))
+      '@qualcomm-ui/utils': 1.7.0(@internationalized/date@3.12.3)
 
-  '@qualcomm-ui/react-core@1.10.0(@qualcomm-ui/core@1.14.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/dom@1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))(@tanstack/react-virtual@3.14.10(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(lucide-react@1.33.0(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)':
+  '@qualcomm-ui/react-core@1.12.0(@qualcomm-ui/core@1.16.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/dom@1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))(@tanstack/react-virtual@3.14.10(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(lucide-react@1.33.0(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)':
     dependencies:
-      '@qualcomm-ui/core': 1.14.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
-      '@qualcomm-ui/dom': 1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
-      '@qualcomm-ui/utils': 1.5.0(@internationalized/date@3.12.3)
+      '@qualcomm-ui/core': 1.16.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))
+      '@qualcomm-ui/dom': 1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))
+      '@qualcomm-ui/utils': 1.7.0(@internationalized/date@3.12.3)
       '@tanstack/react-virtual': 3.14.10(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       lucide-react: 1.33.0(react@19.3.1)
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
 
-  '@qualcomm-ui/react-router-utils@3.1.1(@qualcomm-ui/mdx-common@2.7.0(@qualcomm-ui/typedoc-common@1.0.8)(fuzzysort@3.1.0))(@qualcomm-ui/mdx-vite@5.0.0(@qualcomm-ui/mdx-common@2.7.0(@qualcomm-ui/typedoc-common@1.0.8)(fuzzysort@3.1.0))(@qualcomm-ui/typedoc-common@1.0.8)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))(lodash-es@4.18.1)(minimatch@11.0.5)(rehype-mdx-code-props@3.0.1(supports-color@7.2.0))(remark-frontmatter@5.0.0(supports-color@7.2.0))(remark-gfm@4.0.1(supports-color@7.2.0))(remark-mdx-frontmatter@4.0.0)(shiki@4.4.3)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.3.6(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(zod@4.4.3))(minimatch@11.0.5)(react-dom@19.3.1(react@19.3.1))(react-router@8.5.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1)':
+  '@qualcomm-ui/react-router-utils@3.1.6(@qualcomm-ui/mdx-common@2.8.0(@qualcomm-ui/typedoc-common@1.2.0)(fuzzysort@3.1.0))(@qualcomm-ui/mdx-vite@5.2.1(@qualcomm-ui/mdx-common@2.8.0(@qualcomm-ui/typedoc-common@1.2.0)(fuzzysort@3.1.0))(@qualcomm-ui/typedoc-common@1.2.0)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))(lodash-es@4.18.1)(minimatch@11.0.5)(rehype-mdx-code-props@3.0.1(supports-color@7.2.0))(remark-frontmatter@5.0.0(supports-color@7.2.0))(remark-gfm@4.0.1(supports-color@7.2.0))(remark-mdx-frontmatter@4.0.0)(shiki@4.4.3)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.3.6(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(zod@4.4.3))(minimatch@11.0.5)(react-dom@19.3.1(react@19.3.1))(react-router@8.5.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1)':
     dependencies:
       '@huggingface/transformers': 4.2.0
       '@orama/orama': 3.1.18
-      '@qualcomm-ui/mdx-common': 2.7.0(@qualcomm-ui/typedoc-common@1.0.8)(fuzzysort@3.1.0)
-      '@qualcomm-ui/mdx-vite': 5.0.0(@qualcomm-ui/mdx-common@2.7.0(@qualcomm-ui/typedoc-common@1.0.8)(fuzzysort@3.1.0))(@qualcomm-ui/typedoc-common@1.0.8)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))(lodash-es@4.18.1)(minimatch@11.0.5)(rehype-mdx-code-props@3.0.1(supports-color@7.2.0))(remark-frontmatter@5.0.0(supports-color@7.2.0))(remark-gfm@4.0.1(supports-color@7.2.0))(remark-mdx-frontmatter@4.0.0)(shiki@4.4.3)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.3.6(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(zod@4.4.3)
+      '@qualcomm-ui/mdx-common': 2.8.0(@qualcomm-ui/typedoc-common@1.2.0)(fuzzysort@3.1.0)
+      '@qualcomm-ui/mdx-vite': 5.2.1(@qualcomm-ui/mdx-common@2.8.0(@qualcomm-ui/typedoc-common@1.2.0)(fuzzysort@3.1.0))(@qualcomm-ui/typedoc-common@1.2.0)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))(lodash-es@4.18.1)(minimatch@11.0.5)(rehype-mdx-code-props@3.0.1(supports-color@7.2.0))(remark-frontmatter@5.0.0(supports-color@7.2.0))(remark-gfm@4.0.1(supports-color@7.2.0))(remark-mdx-frontmatter@4.0.0)(shiki@4.4.3)(supports-color@7.2.0)(typescript@6.0.3)(vite@8.3.6(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(zod@4.4.3)
       minimatch: 11.0.5
       my-ua-parser: 2.0.4
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
       react-router: 8.5.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
 
-  '@qualcomm-ui/react@2.0.0(3f4ec61dcd1e2f23d51591811ee0d8df)':
+  '@qualcomm-ui/react@2.3.0(ee73d09108378f7ce96c85832966ea7e)':
     dependencies:
-      '@qualcomm-ui/core': 1.14.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
-      '@qualcomm-ui/qds-core': 2.0.0(@qualcomm-ui/core@1.14.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))
-      '@qualcomm-ui/react-core': 1.10.0(@qualcomm-ui/core@1.14.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/dom@1.3.1(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3))(@tanstack/react-virtual@3.14.10(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(lucide-react@1.33.0(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
-      '@qualcomm-ui/utils': 1.5.0(@internationalized/date@3.12.3)
+      '@qualcomm-ui/core': 1.16.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))
+      '@qualcomm-ui/qds-core': 2.2.0(@qualcomm-ui/core@1.16.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))
+      '@qualcomm-ui/react-core': 1.12.0(@qualcomm-ui/core@1.16.0(@internationalized/date@3.12.3)(@internationalized/number@3.6.6)(@qualcomm-ui/dom@1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/dom@1.3.5(@floating-ui/dom@1.7.6)(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)))(@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3))(@tanstack/react-virtual@3.14.10(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(lucide-react@1.33.0(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@qualcomm-ui/utils': 1.7.0(@internationalized/date@3.12.3)
       '@tanstack/react-virtual': 3.14.10(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       lucide-react: 1.33.0(react@19.3.1)
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
 
-  '@qualcomm-ui/tailwind-plugin@2.0.0(tailwindcss@4.3.3)':
+  '@qualcomm-ui/tailwind-plugin@2.0.1(tailwindcss@4.3.3)':
     dependencies:
       tailwindcss: 4.3.3
 
@@ -4778,9 +4765,9 @@ snapshots:
     dependencies:
       typescript: 6.0.3
 
-  '@qualcomm-ui/typedoc-common@1.0.8': {}
+  '@qualcomm-ui/typedoc-common@1.2.0': {}
 
-  '@qualcomm-ui/utils@1.5.0(@internationalized/date@3.12.3)':
+  '@qualcomm-ui/utils@1.7.0(@internationalized/date@3.12.3)':
     dependencies:
       '@internationalized/date': 3.12.3
 
@@ -5521,7 +5508,7 @@ snapshots:
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
-      js-yaml: 4.3.1
+      js-yaml: 4.3.2
       parse-json: 5.2.0
     optionalDependencies:
       typescript: 6.0.3
@@ -6604,10 +6591,6 @@ snapshots:
 
   js-tokens@4.0.0: {}
 
-  js-yaml@4.3.1:
-    dependencies:
-      argparse: 2.0.1
-
   js-yaml@4.3.2:
     dependencies:
       argparse: 2.0.1
@@ -7324,9 +7307,6 @@ snapshots:
 
   my-ua-parser@2.0.4: {}
 
-  nanoid@3.3.18:
-    optional: true
-
   nanoid@3.3.20: {}
 
   napi-postinstall@0.3.4: {}
@@ -7560,13 +7540,6 @@ snapshots:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
-    optional: true
-
-  postcss@8.5.26:
-    dependencies:
-      nanoid: 3.3.18
-      picocolors: 1.1.1
-      source-map-js: 1.2.1
     optional: true
 
   postcss@8.5.32:
